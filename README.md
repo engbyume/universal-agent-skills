@@ -43,6 +43,12 @@ The exclusion policy is deliberately conservative. A repository may be public an
 
 - [`skills.json`](skills.json): machine-readable catalog
 - [`SOURCES.md`](SOURCES.md): source repositories and provenance notes
+- [`frameworks/yaml-wiki-framework.md`](frameworks/yaml-wiki-framework.md): user and agent guide with a copyable prompt
+- [`frameworks/yaml-wiki-framework.yaml`](frameworks/yaml-wiki-framework.yaml): machine-readable framework contract
+
+### YAML Wiki Framework
+
+The catalog includes a descriptive YAML Wiki Framework based on the public `robabby/claude-skills` memory system. It covers Markdown notes, YAML frontmatter, typed memory, wiki-links, hydration, recall, reflection, handoffs, and link checks. Its two research-paper references are labeled as conceptual inspirations only, not as explicit upstream citations.
 
 ## Updating the catalog
 

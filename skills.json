@@ -431,6 +431,28 @@
       "provenance": "explicit GitHub source in installed skill documentation"
     },
     {
+      "id": "yaml-wiki-framework",
+      "name": "YAML Wiki Framework",
+      "category": "memory-and-knowledge",
+      "description": "A Markdown and YAML-frontmatter wiki contract for typed memory, recall, reflection, hydration, and linked knowledge navigation by agents and users.",
+      "installed_name": "claude-skills memory system",
+      "source_repository": "https://github.com/robabby/claude-skills",
+      "source_path": "docs/memory-system.md and skills/{name}",
+      "provenance": "installed GitHub repository; framework guide in this catalog",
+      "conceptual_inspirations": [
+        {
+          "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+          "url": "https://arxiv.org/abs/2304.03442",
+          "status": "conceptual inspiration only"
+        },
+        {
+          "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+          "url": "https://arxiv.org/abs/2504.19413",
+          "status": "conceptual inspiration only"
+        }
+      ]
+    },
+    {
       "id": "graphify",
       "name": "Graphify",
       "category": "memory-and-knowledge",

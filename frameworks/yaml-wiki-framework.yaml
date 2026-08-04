@@ -1,0 +1,90 @@
+framework:
+  id: yaml-wiki
+  name: YAML Wiki Framework
+  version: 1
+  purpose: >-
+    A human-readable, agent-friendly knowledge system built from Markdown notes,
+    YAML frontmatter, typed memory, and explicit wiki-links.
+  audience:
+    - agents
+    - users
+  storage:
+    preferred_format: markdown
+    metadata: yaml-frontmatter
+    links: wiki-links
+    implementation_note: >-
+      Obsidian is a natural implementation, but the contract is storage-agnostic.
+  memory_types:
+    episodic:
+      meaning: Events, experiences, failures, and notable session history.
+      folder: Memory/Episodic
+    semantic:
+      meaning: Facts, definitions, specifications, and stable knowledge.
+      folder: Memory/Semantic
+    procedural:
+      meaning: Repeatable methods, workflows, and troubleshooting patterns.
+      folder: Memory/Procedural
+    strategic:
+      meaning: Decisions, priorities, plans, and rationale.
+      folder: Memory/Strategic
+  frontmatter_schema:
+    created:
+      type: date
+      required: true
+    type:
+      type: enum
+      values: [episodic, semantic, procedural, strategic]
+      required: true
+    importance:
+      type: number
+      range: [0.0, 1.0]
+      required: true
+    concepts:
+      type: list
+      items: string
+      required: true
+    source:
+      type: enum
+      values: [explicit, session, imported, inferred]
+      required: true
+  operations:
+    hydrate: Load current state, recent relevant memories, and the decision register.
+    recall: Search note bodies and frontmatter concepts, optionally by memory type.
+    remember: Store a durable fact, procedure, event, or decision.
+    reflect: Consolidate useful session learning and update living context when needed.
+    pickup: Create a concise handoff before a context reset.
+    link_check: Find broken links, ambiguous links, and orphaned notes.
+  agent_contract:
+    - Preserve manual edits and prefer authoritative, current sources.
+    - Distinguish confirmed facts, inferences, plans, and open questions.
+    - Reuse an existing note instead of creating a duplicate when safe.
+    - Add meaningful wiki-links to related notes.
+    - Do not store credentials, tokens, cookies, private prompts, or unnecessary personal data.
+    - Never claim that an inference is a fact or that a plan is complete.
+  session_flow:
+    - hydrate
+    - recall
+    - work
+    - remember
+    - reflect
+    - pickup
+  conceptual_inspirations:
+    - title: "Generative Agents: Interactive Simulacra of Human Behavior"
+      authors: "Joon Sung Park; Joseph C. O'Brien; Carrie J. Cai; Meredith Ringel Morris; Percy Liang; Michael S. Bernstein"
+      year: 2023
+      url: https://arxiv.org/abs/2304.03442
+      relationship: >-
+        Conceptual parallel to observation, retrieval, reflection, and durable memory.
+      attribution_status: conceptual_inspiration_only
+    - title: "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory"
+      authors: "Prateek Chhikara; Dev Khant; Saket Aryan; Taranjeet Singh; Deshraj Yadav"
+      year: 2025
+      url: https://arxiv.org/abs/2504.19413
+      relationship: >-
+        Conceptual parallel to structured long-term agent memory under bounded context.
+      attribution_status: conceptual_inspiration_only
+  attribution:
+    upstream_framework: https://github.com/robabby/claude-skills
+    note: >-
+      The two papers are listed as conceptual inspiration references. This manifest
+      does not claim explicit citation or reproduce paper text.
