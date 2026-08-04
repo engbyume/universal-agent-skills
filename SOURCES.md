@@ -1,0 +1,49 @@
+# Sources and provenance
+
+This catalog was assembled from the installed skill directories and the local skills lockfile on 2026-08-03.
+
+## Included upstream repositories
+
+| Repository | Why it is included |
+| --- | --- |
+| [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Present in the skills lockfile and used for browser automation workflows. |
+| [anthropics/skills](https://github.com/anthropics/skills) | Installed Git repository containing general-purpose document, design, planning, and developer skills. |
+| [robabby/claude-skills](https://github.com/robabby/claude-skills) | Installed Git repository containing memory, workflow, coding, testing, and quality skills. |
+| [deonmenezes/mantishack](https://github.com/deonmenezes/mantishack) | Installed Git repository containing an authorized security workflow. |
+| [vercel-labs/opensrc](https://github.com/vercel-labs/opensrc) | Installed Git repository containing a general source-inspection skill. |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Installed Git repository containing general UI/UX design intelligence. |
+| [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
+| [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
+| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
+
+## Methodology
+
+1. Enumerate installed skill directories and resolve their Git repositories.
+2. Check the local skills lockfile for GitHub sources that are not represented by a local repository.
+3. Keep only public GitHub origins that could be verified.
+4. Categorize each skill by its primary job and write a short description from its installed metadata.
+5. Scan the final catalog for credentials, private prompts, machine paths, and excluded platform or service names.
+
+General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows, not integrations for one hosted vendor. Service wrappers and platform-specific skills remain excluded even when their repositories are public.
+
+## Provenance notes
+
+- Repository links are upstream links, not copies or forks created by this catalog.
+- `source_snapshot` values in `skills.json` are local commit identifiers where the source repository was available locally. They are provenance markers, not claims that the catalog vendors a particular version.
+- Monorepo entries include their subpath so a reader can find the original skill in the upstream repository.
+- The public catalog intentionally avoids local filesystem paths, secrets, credentials, environment files, raw prompts, and bundled third-party code.
+
+## Exclusions
+
+The following are not cataloged:
+
+- **Aside skills:** bundled Aside resources and `aside-*` skills, per request.
+- **Local or private operating skills:** personal mentor, workspace, memory, and machine-operation instructions where no public GitHub origin was verified.
+- **Tool or service-specific skills:** Anytype, Firecrawl, Higgsfield, Composio, Google Stitch, Unusual Whales, OfficeCLI, Scrapling, and other hosted-service or single-tool wrappers.
+- **Open Pencil:** excluded because it is a skill tightly coupled to the OpenPencil editor, despite having a public repository.
+- **Unverified local skills:** skills with no GitHub remote, lockfile entry, or explicit upstream repository metadata.
+
+The policy favors omission over guessing. If a future install records a clear public GitHub source and the skill is general-purpose, add it with a short description and provenance note.
