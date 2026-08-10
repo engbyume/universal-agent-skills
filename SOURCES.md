@@ -1,6 +1,6 @@
 # Sources and provenance
 
-This catalog was assembled from the installed skill directories and the local skills lockfile on 2026-08-03.
+This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-08-10.
 
 ## Included upstream repositories
 
@@ -17,6 +17,7 @@ This catalog was assembled from the installed skill directories and the local sk
 | [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
+| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; revision recorded in `skills.json`. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 
 ## Methodology

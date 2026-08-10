@@ -431,6 +431,17 @@
       "provenance": "explicit GitHub source in installed skill documentation"
     },
     {
+      "id": "sol-advisor",
+      "name": "Sol Advisor",
+      "category": "agent-efficiency",
+      "description": "Provides architect-first orchestration with exact native role routing, parent-owned verification, and an explicit Luna app-task lane.",
+      "installed_name": "sol-advisor",
+      "source_repository": "https://github.com/DannyMac180/sol-advisor",
+      "source_path": "skills/{orchestration,setup}",
+      "provenance": "Codex plugin marketplace installation",
+      "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
+    },
+    {
       "id": "yaml-wiki-framework",
       "name": "YAML Wiki Framework",
       "category": "memory-and-knowledge",
