@@ -528,5 +528,16 @@
       "provenance": "installed Git repository",
       "source_snapshot": "f96078a"
     }
+    },
+    {
+      "id": "sepia",
+      "name": "Sepia",
+      "category": "writing-and-communication",
+      "description": "Routes prose through human-writing heuristics for fiction and professional text, with write, review, refactor, and recreate operations.",
+      "installed_name": "sepia",
+      "source_repository": "https://github.com/Nanako0129/sepia",
+      "source_path": "skills/sepia",
+      "provenance": "scoped static audit; repository-level workflow quarantined",
+      "source_snapshot": "d8a0f948cc46a0ba0d610df7458c4e8943bfe51a"
   ]
 }
