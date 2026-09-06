@@ -565,7 +565,7 @@
       "id": "codex-usage-fallback-router",
       "name": "Codex Usage Fallback Router",
       "category": "agent-efficiency",
-      "description": "Checks usage thresholds and hands new work to approved free-model runners that also work without Codex, without storing credentials.",
+      "description": "Checks usage thresholds and switches Codex to an approved free provider or a standalone free-model runner without storing credentials.",
       "installed_name": "codex-usage-fallback-router",
       "source_repository": null,
       "source_path": null,
