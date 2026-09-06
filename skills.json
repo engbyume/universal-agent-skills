@@ -573,6 +573,17 @@
       "source_snapshot": null
     },
     {
+      "id": "codex-harness-free-model-router",
+      "name": "Codex Harness Free Model Router",
+      "category": "agent-efficiency",
+      "description": "Packages a local Codex model switcher, approved free fallback daemon, and paid GPT lane with threshold-based routing.",
+      "installed_name": "codex-harness-free-model-router",
+      "source_repository": "https://github.com/engbyume/codex-harness-free-model-router",
+      "source_path": "skill",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "d781e96"
+    },
+    {
       "id": "jeremy-eval-loop",
       "name": "Eval Loop",
       "category": "planning-and-quality",

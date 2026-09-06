@@ -22,6 +22,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
+| [engbyume/codex-harness-free-model-router](https://github.com/engbyume/codex-harness-free-model-router) | Public standalone package for the Codex free-model switcher, daemon fallback, and paid GPT lane. |
 
 ## Explicitly approved local entries
 
