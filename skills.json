@@ -565,7 +565,7 @@
       "id": "codex-usage-fallback-router",
       "name": "Codex Usage Fallback Router",
       "category": "agent-efficiency",
-      "description": "Checks usage thresholds and routes new work to approved fallback model services without storing credentials or machine details.",
+      "description": "Checks usage thresholds and routes new work to approved fallback model services, with explicit manual override support and no credential storage.",
       "installed_name": "codex-usage-fallback-router",
       "source_repository": null,
       "source_path": null,
