@@ -3,11 +3,11 @@
   "catalog": "jeremy-agent-skills",
   "owner": "engbyume",
   "policy": {
-    "include_only": "Skills installed from or explicitly sourced to public GitHub repositories.",
+    "include_only": "Skills installed from public GitHub repositories, plus explicitly approved local skills with redacted catalog entries.",
     "exclude": [
       "Aside and bundled platform skills",
       "Skills with no verifiable GitHub origin",
-      "Local-only or Jeremy-specific operating instructions",
+      "Unapproved local-only or Jeremy-specific operating instructions",
       "Vendor-specific integrations and hosted-service wrappers",
       "Private files, credentials, environment files, and machine paths"
     ]
@@ -434,12 +434,23 @@
       "id": "sol-advisor",
       "name": "Sol Advisor",
       "category": "agent-efficiency",
-      "description": "Provides architect-first orchestration with exact native role routing, parent-owned verification, and an explicit Luna app-task lane.",
+      "description": "Provides architect-first orchestration with parent-owned verification, cost-aware selection, and only Luna Max, Sol High, or rare Astra Medium short-task routing.",
       "installed_name": "sol-advisor",
       "source_repository": "https://github.com/DannyMac180/sol-advisor",
       "source_path": "skills/{orchestration,setup}",
       "provenance": "Codex plugin marketplace installation",
       "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
+    },
+    {
+      "id": "sol-foreman",
+      "name": "Sol Foreman",
+      "category": "agent-efficiency",
+      "description": "Coordinates bounded delegated work, checkpoints, same-child repairs, and independent acceptance review for longer or stalled tasks.",
+      "installed_name": "sol-foreman",
+      "source_repository": "https://github.com/olsenbrands/sol-foreman",
+      "source_path": "skills/sol-foreman",
+      "provenance": "universal source audit and active shared copy",
+      "source_snapshot": "25b5f143e5e04b0ed54c36be99c48ceb1d783a33"
     },
     {
       "id": "yaml-wiki-framework",
@@ -527,7 +538,6 @@
       "source_path": "skills/opensrc",
       "provenance": "installed Git repository",
       "source_snapshot": "f96078a"
-    }
     },
     {
       "id": "sepia",
@@ -539,5 +549,39 @@
       "source_path": "skills/sepia",
       "provenance": "scoped static audit; repository-level workflow quarantined",
       "source_snapshot": "d8a0f948cc46a0ba0d610df7458c4e8943bfe51a"
+    },
+    {
+      "id": "i-have-adhd",
+      "name": "I Have ADHD",
+      "category": "writing-and-communication",
+      "description": "Shapes agent output for action-first ADHD-friendly reading, state tracking, concise steps, and visible progress.",
+      "installed_name": "i-have-adhd",
+      "source_repository": "https://github.com/ayghri/i-have-adhd",
+      "source_path": "skills/i-have-adhd",
+      "provenance": "universal static audit and installed active copy",
+      "source_snapshot": "58494af57962b2d7a996b4d419474380a299af5e"
+    },
+    {
+      "id": "codex-usage-fallback-router",
+      "name": "Codex Usage Fallback Router",
+      "category": "agent-efficiency",
+      "description": "Checks usage thresholds and routes new work to approved fallback model services without storing credentials or machine details.",
+      "installed_name": "codex-usage-fallback-router",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "jeremy-eval-loop",
+      "name": "Eval Loop",
+      "category": "planning-and-quality",
+      "description": "Defines a checkable goal, runs verification after a change, and limits corrections to a bounded number of attempts.",
+      "installed_name": "jeremy-eval-loop",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    }
   ]
 }
