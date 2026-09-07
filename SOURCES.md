@@ -32,6 +32,11 @@ These entries have no claimed upstream repository. The catalog stores only publi
 | --- | --- |
 | Codex Usage Fallback Router | Explicitly approved local skill for usage checks and approved model fallback routing. |
 | Eval Loop | Explicitly approved local skill for bounded verification after changes. |
+| Autonomous Skill Routing | Explicitly approved local skill for compact index-based skill discovery. |
+| Agent Mentor | Explicitly approved local skill for authority, scope, and runtime evidence checks. |
+| Jeremy Batch | Explicitly approved local skill for batching independent operations. |
+| Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
+| Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
 
 ## Methodology
 
@@ -40,6 +45,7 @@ These entries have no claimed upstream repository. The catalog stores only publi
 3. Keep public GitHub origins that could be verified, plus explicitly approved local skills with redacted entries.
 4. Categorize each skill by its primary job and write a short description from its installed metadata.
 5. Scan the final catalog for credentials, private prompts, machine paths, and excluded platform or service names.
+6. Keep usage-saving process skills mandatory, route connector and specialized skills by task or condition, select one canonical source for duplicate manifests, and use a compact routing index instead of scanning every skill body.
 
 General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows, not integrations for one hosted vendor. Service wrappers and platform-specific skills remain excluded even when their repositories are public.
 
