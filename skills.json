@@ -584,6 +584,17 @@
       "source_snapshot": "91edf59"
     },
     {
+      "id": "codex-recursive-self-improvement",
+      "name": "Codex Recursive Self-Improvement",
+      "category": "agent-efficiency",
+      "description": "Turns observed agent mistakes into bounded, evidence-backed, user-approved improvements to skills, checks, runbooks, and durable learning for ChatGPT models in the Codex harness.",
+      "installed_name": "codex-recursive-self-improvement",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "SKILL.md",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "26b6ccf"
+    },
+    {
       "id": "jeremy-eval-loop",
       "name": "Eval Loop",
       "category": "planning-and-quality",
