@@ -23,7 +23,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
 | [engbyume/codex-harness-free-model-router](https://github.com/engbyume/codex-harness-free-model-router) | Public standalone package for a provider-neutral, user-configured Codex model router, local daemon, fallback panel, and real availability tracking; snapshot updated at commit `91edf59` (2026-09-07). |
-| [engbyume/codex-recursive-self-improvement](https://github.com/engbyume/codex-recursive-self-improvement) | Public standalone package for evidence-driven, bounded learning from agent mistakes in ChatGPT and the Codex harness; snapshot at commit `26b6ccf` (2026-09-07). |
+| [engbyume/codex-recursive-self-improvement](https://github.com/engbyume/codex-recursive-self-improvement) | Public standalone package for mandatory post-action, evidence-driven learning from agent mistakes in ChatGPT and the Codex harness; snapshot at commit `09ca41c` (2026-09-07). |
 
 ## Explicitly approved local entries
 
