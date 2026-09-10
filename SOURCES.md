@@ -17,8 +17,8 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
-| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; local routing audit and role update recorded 2026-09-05. |
-| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | `skills/sol-foreman` audited at commit `25b5f143e5e04b0ed54c36be99c48ceb1d783a33`; retained as a per-request coordination skill. |
+| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; public-safe lane contract update recorded 2026-09-10. |
+| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | `skills/sol-foreman` audited at commit `25b5f143e5e04b0ed54c36be99c48ceb1d783a33`; retained as a per-request coordination skill with a public-safe lane contract update recorded 2026-09-10. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
