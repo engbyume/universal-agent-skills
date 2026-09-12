@@ -595,6 +595,17 @@
       "source_snapshot": "09ca41c"
     },
     {
+      "id": "programmatic-tool-calling",
+      "name": "Programmatic Tool Calling",
+      "category": "agent-efficiency",
+      "description": "Mandatory pre-tool audit that selects direct, parallel, or programmatic execution for every ChatGPT and Codex task, with bounded Composio and harness-native workflows when applicable.",
+      "installed_name": "programmatic-tool-calling",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "skills/programmatic-tool-calling/SKILL.md",
+      "provenance": "public standalone repository companion skill",
+      "source_snapshot": "fc52786"
+    },
+    {
       "id": "jeremy-eval-loop",
       "name": "Eval Loop",
       "category": "planning-and-quality",
