@@ -3,11 +3,11 @@
   "catalog": "jeremy-agent-skills",
   "owner": "engbyume",
   "policy": {
-    "include_only": "Skills installed from or explicitly sourced to public GitHub repositories.",
+    "include_only": "Skills installed from public GitHub repositories, plus explicitly approved local skills with redacted catalog entries.",
     "exclude": [
       "Aside and bundled platform skills",
       "Skills with no verifiable GitHub origin",
-      "Local-only or Jeremy-specific operating instructions",
+      "Unapproved local-only or Jeremy-specific operating instructions",
       "Vendor-specific integrations and hosted-service wrappers",
       "Private files, credentials, environment files, and machine paths"
     ]
@@ -434,12 +434,23 @@
       "id": "sol-advisor",
       "name": "Sol Advisor",
       "category": "agent-efficiency",
-      "description": "Provides architect-first orchestration with exact native role routing, parent-owned verification, and an explicit Luna app-task lane.",
+      "description": "Provides architect-first routing with parent-owned verification, cost-aware standard-GPT selection, direct-only Luna Reserve, and host-native non-GPT delegation when rate limits and daemon state permit.",
       "installed_name": "sol-advisor",
       "source_repository": "https://github.com/DannyMac180/sol-advisor",
       "source_path": "skills/{orchestration,setup}",
       "provenance": "Codex plugin marketplace installation",
       "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
+    },
+    {
+      "id": "sol-foreman",
+      "name": "Sol Foreman",
+      "category": "agent-efficiency",
+      "description": "Coordinates bounded delegated work, checkpoints, same-child repairs, standard-GPT role routing, direct-only Luna Reserve, and host-native non-GPT delegation with evidence-backed acceptance.",
+      "installed_name": "sol-foreman",
+      "source_repository": "https://github.com/olsenbrands/sol-foreman",
+      "source_path": "skills/sol-foreman",
+      "provenance": "universal source audit and active shared copy",
+      "source_snapshot": "25b5f143e5e04b0ed54c36be99c48ceb1d783a33"
     },
     {
       "id": "yaml-wiki-framework",
@@ -527,7 +538,6 @@
       "source_path": "skills/opensrc",
       "provenance": "installed Git repository",
       "source_snapshot": "f96078a"
-    }
     },
     {
       "id": "sepia",
@@ -539,5 +549,127 @@
       "source_path": "skills/sepia",
       "provenance": "scoped static audit; repository-level workflow quarantined",
       "source_snapshot": "d8a0f948cc46a0ba0d610df7458c4e8943bfe51a"
+    },
+    {
+      "id": "i-have-adhd",
+      "name": "I Have ADHD",
+      "category": "writing-and-communication",
+      "description": "Shapes agent output for action-first ADHD-friendly reading, state tracking, concise steps, and visible progress.",
+      "installed_name": "i-have-adhd",
+      "source_repository": "https://github.com/ayghri/i-have-adhd",
+      "source_path": "skills/i-have-adhd",
+      "provenance": "universal static audit and installed active copy",
+      "source_snapshot": "58494af57962b2d7a996b4d419474380a299af5e"
+    },
+    {
+      "id": "codex-usage-fallback-router",
+      "name": "Codex Usage Fallback Router",
+      "category": "agent-efficiency",
+      "description": "Checks usage using percent-left thresholds and selects approved free-model fallbacks without storing credentials; Luna Reserve is considered only after regular capacity is depleted.",
+      "installed_name": "codex-usage-fallback-router",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "codex-harness-free-model-router",
+      "name": "Codex Harness Free Model Router",
+      "category": "agent-efficiency",
+      "description": "Provides a provider-neutral, user-configured Codex model router, local daemon, paid or free lanes, real availability tracking with probe endpoints, and customizable Default Fallback Rules.",
+      "installed_name": "codex-harness-free-model-router",
+      "source_repository": "https://github.com/engbyume/codex-harness-free-model-router",
+      "source_path": "skill",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "b591882"
+    },
+    {
+      "id": "codex-recursive-self-improvement",
+      "name": "Codex Recursive Self-Improvement",
+      "category": "agent-efficiency",
+      "description": "Mandatory post-action gate that turns observed agent mistakes and reusable patterns into bounded, evidence-backed, user-approved improvements for ChatGPT models in the Codex harness.",
+      "installed_name": "codex-recursive-self-improvement",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "SKILL.md",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "09ca41c"
+    },
+    {
+      "id": "programmatic-tool-calling",
+      "name": "Programmatic Tool Calling",
+      "category": "agent-efficiency",
+      "description": "Mandatory pre-tool audit that selects direct, parallel, or programmatic execution for every ChatGPT and Codex task, with bounded Composio and harness-native workflows when applicable.",
+      "installed_name": "programmatic-tool-calling",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "skills/programmatic-tool-calling/SKILL.md",
+      "provenance": "public standalone repository companion skill",
+      "source_snapshot": "fc52786"
+    },
+    {
+      "id": "jeremy-eval-loop",
+      "name": "Eval Loop",
+      "category": "planning-and-quality",
+      "description": "Defines a checkable goal, runs verification after a change, and limits corrections to a bounded number of attempts.",
+      "installed_name": "jeremy-eval-loop",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "autonomous-skill-routing",
+      "name": "Autonomous Skill Routing",
+      "category": "agent-efficiency",
+      "description": "Uses a compact routing index to load only mandatory skills and task or condition matches instead of scanning every skill body.",
+      "installed_name": "autonomous-skill-routing",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "jeremy-agent-mentor",
+      "name": "Agent Mentor",
+      "category": "agent-efficiency",
+      "description": "Checks source authority, permissions, scope, runtime evidence, and dependable handoffs for non-trivial agent work.",
+      "installed_name": "jeremy-agent-mentor",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "jeremy-batch",
+      "name": "Jeremy Batch",
+      "category": "agent-efficiency",
+      "description": "Batches independent reads, searches, and checks into fewer calls to save rate-limit slots and round trips.",
+      "installed_name": "jeremy-batch",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "composio-cli",
+      "name": "Composio CLI",
+      "category": "agent-efficiency",
+      "description": "Provides mandatory Composio discovery, connection, schema, dry-run, and execution guidance while actual tool calls stay task-scoped.",
+      "installed_name": "composio-cli",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "usage-limit-resume",
+      "name": "Usage Limit Resume",
+      "category": "agent-efficiency",
+      "description": "Captures reset state and resumes blocked work while treating Luna Reserve as eligible only after regular capacity is depleted.",
+      "installed_name": "usage-limit-resume",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    }
   ]
 }
