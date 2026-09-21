@@ -24,6 +24,9 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
 | [engbyume/codex-harness-free-model-router](https://github.com/engbyume/codex-harness-free-model-router) | Public standalone package for a provider-neutral, user-configured Codex model router, local daemon, fallback panel, real availability tracking, and optional provider client-header support; snapshot updated at commit `b591882` (2026-09-08). |
 | [engbyume/codex-recursive-self-improvement](https://github.com/engbyume/codex-recursive-self-improvement) | Public standalone package for mandatory post-action learning and programmatic tool calling audits for ChatGPT and the Codex harness; snapshot at commit `fc52786` (2026-09-12). |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | Existing local skill passed static audit and is mandatory for simplicity and YAGNI decisions. |
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Official Headroom source installed as a local compression tool; use it as a mutually exclusive alternative to Lean CTX and RTK. |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Official Rust Token Killer source built and installed as a command-output optimizer; bundled agent skills were not installed. |
 
 ## Explicitly approved local entries
 

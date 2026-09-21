@@ -670,6 +670,39 @@
       "source_path": null,
       "provenance": "explicitly approved local skill; redacted catalog entry",
       "source_snapshot": null
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "category": "agent-efficiency",
+      "description": "Enforces a YAGNI and stdlib-first ladder so agents choose the shortest correct implementation and avoid unnecessary dependencies.",
+      "installed_name": "ponytail",
+      "source_repository": "https://github.com/DietrichGebert/ponytail",
+      "source_path": "skills/ponytail",
+      "provenance": "approved static audit and existing local source",
+      "source_snapshot": "a945778b4a73b0b78c3c781a594b62cd3a324637"
+    },
+    {
+      "id": "headroom",
+      "name": "Headroom",
+      "category": "agent-efficiency",
+      "description": "Compresses tool output, logs, files, and context through a local proxy or MCP path; use it as the selected compression layer for a task.",
+      "installed_name": "headroom",
+      "source_repository": "https://github.com/headroomlabs-ai/headroom",
+      "source_path": "headroom",
+      "provenance": "conditional static audit of local skill and GitHub source installation",
+      "source_snapshot": "0.37.0"
+    },
+    {
+      "id": "rtk",
+      "name": "RTK Rust Token Killer",
+      "category": "agent-efficiency",
+      "description": "Filters and compresses eligible command output before it reaches an agent, reducing shell-output token cost without installing the repository's bundled agent skills.",
+      "installed_name": "rtk",
+      "source_repository": "https://github.com/rtk-ai/rtk",
+      "source_path": "Cargo.toml and src",
+      "provenance": "official Rust source audit and local cargo installation",
+      "source_snapshot": "develop"
     }
   ]
 }
