@@ -1,6 +1,6 @@
 # Sources and provenance
 
-This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-09-07.
+This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-09-22.
 
 ## Included upstream repositories
 
@@ -17,7 +17,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
-| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; public-safe lane contract update recorded 2026-09-10. |
+| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; cataloged for risk-gated role routing, cost-aware selection, and parent-owned verification. |
 | [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | `skills/sol-foreman` audited at commit `25b5f143e5e04b0ed54c36be99c48ceb1d783a33`; retained as a per-request coordination skill with a public-safe lane contract update recorded 2026-09-10. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
@@ -34,7 +34,7 @@ These entries have no claimed upstream repository. The catalog stores only publi
 
 | Skill | Why it is included |
 | --- | --- |
-| Codex Usage Fallback Router | Explicitly approved local skill for usage checks and approved model fallback routing. |
+| Codex Usage Fallback Router | Explicitly approved local skill for usage checks, approved free-model fallbacks, and a local model switcher. |
 | Eval Loop | Explicitly approved local skill for bounded verification after changes. |
 | Autonomous Skill Routing | Explicitly approved local skill for compact index-based skill discovery. |
 | Agent Mentor | Explicitly approved local skill for authority, scope, and runtime evidence checks. |
