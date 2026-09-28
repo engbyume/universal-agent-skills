@@ -17,8 +17,8 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
-| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; cataloged for risk-gated role routing, cost-aware selection, and parent-owned verification. The local routing overlay uses Luna / Max by default, Sol / High for hard work, and Astra / High for very complex tasks predicted under 10 minutes; it does not change upstream. |
-| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | `skills/sol-foreman` audited at commit `25b5f143e5e04b0ed54c36be99c48ceb1d783a33`; retained as a per-request coordination skill. The local overlay uses Luna / Max by default, Sol / High for hard work, and Astra / High for very complex tasks predicted under 10 minutes; it does not change upstream. |
+| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; cataloged for risk-gated role routing, cost-aware selection, and parent-owned verification. A local overlay added 90% context checkpoints, current-session model evidence, and cross-chat handoff rules on September 28, 2026; upstream unchanged. |
+| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | `skills/sol-foreman` audited at commit `25b5f143e5e04b0ed54c36be99c48ceb1d783a33`; retained as a per-request coordination skill. The local overlay added 90% context checkpoints, current-session model evidence, and cross-chat handoff rules on September 28, 2026; upstream unchanged. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
@@ -56,6 +56,10 @@ General agent capabilities such as browser automation, context compression, grap
 ## Provenance notes
 
 - Repository links are upstream links, not copies or forks created by this catalog.
+- On September 28, 2026, redacted local agent instructions were clarified to separate
+  user authorization from goal-state evidence, avoid repeated continuation prompts,
+  checkpoint at first-compaction thresholds, and avoid guessing active model identity.
+  No upstream repository was changed by that local work.
 - The YAML Wiki Framework guide is a descriptive synthesis for agents and users. It does not copy the upstream repository's private/local configuration or reproduce research-paper text.
 - Paper links are public reference links: [Generative Agents](https://arxiv.org/abs/2304.03442) and [Mem0](https://arxiv.org/abs/2504.19413). They are labeled as conceptual inspiration only.
 - `source_snapshot` values in `skills.json` are local commit identifiers where the source repository was available locally. They are provenance markers, not claims that the catalog vendors a particular version.
