@@ -1,6 +1,6 @@
 # Jeremy's Agent Skills
 
-A personal catalog of AI-agent skills that were installed from public GitHub repositories.
+A personal catalog of AI-agent skills that were installed from public GitHub repositories or explicitly approved for redacted local cataloging.
 
 This repository is a **catalog, not a mirror**. It contains short descriptions, categories, provenance notes, and links back to the original repositories. It does not copy third-party skill instructions, bundled scripts, private prompts, credentials, environment files, or local configuration.
 
@@ -12,7 +12,7 @@ A skill is included only when its source can be traced to a public GitHub reposi
 - the local skills lockfile
 - an explicit repository or installation link in the skill's own metadata
 
-The catalog includes task-oriented skills that are useful across agent runtimes, such as memory workflows, context efficiency, planning, research, writing, design, documents, security, and verification.
+The catalog includes task-oriented skills that are useful across agent runtimes, such as memory workflows, context efficiency, planning, research, writing, design, documents, security, and verification. Explicitly approved local skills appear only as redacted entries.
 
 ## What is intentionally excluded
 
@@ -20,7 +20,7 @@ The catalog does not include:
 
 - Aside skills or other bundled platform skills
 - Skills with no verifiable GitHub source
-- Local-only skills and Jeremy-specific private operating instructions
+- Unapproved local-only skills and Jeremy-specific private operating instructions
 - Vendor or service integration skills that are tied to a single product or hosted tool
 - Private files, `.env` files, API keys, cookies, prompts, or machine-specific paths
 
@@ -52,7 +52,7 @@ The catalog includes a descriptive YAML Wiki Framework based on the public `roba
 
 ## Updating the catalog
 
-When adding a skill, verify the original GitHub repository first. Add a concise description, a category, the installed skill name, and a source link. Do not copy the skill's implementation into this repository.
+When adding a public-source skill, verify the original GitHub repository first. When adding an explicitly approved local skill, add only a redacted catalog entry and do not claim an upstream source. Add a concise description and a category. Do not copy private prompts, credentials, machine paths, or private implementation details into this repository.
 
 ## Attribution
 
