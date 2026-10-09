@@ -708,7 +708,7 @@
       "id": "designing-ui",
       "name": "Designing UI",
       "category": "creative-and-visual-work",
-      "description": "Conditionally routes UI design work for websites, desktop and mobile apps, dashboards, widgets, components, prototypes, and design systems to the smallest matching design guidance. It does not impose one global visual style.",
+      "description": "Conditionally routes UI design work for websites, desktop and mobile apps, dashboards, widgets, components, prototypes, and design systems to the smallest matching design guidance. It does not impose one global visual style and treats common templated patterns as context-sensitive choices, not bans.",
       "installed_name": "designing-ui",
       "source_repository": null,
       "source_path": null,
