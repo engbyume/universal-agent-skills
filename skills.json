@@ -543,7 +543,7 @@
       "id": "sepia",
       "name": "Sepia",
       "category": "writing-and-communication",
-      "description": "Routes prose through human-writing heuristics for fiction and professional text, and requires direct runtime evidence before applying model-specific rules.",
+      "description": "Combines structure-aware narrative and professional-prose routes with conditional formatting guidance and evidence-based model-specific rules.",
       "installed_name": "sepia",
       "source_repository": "https://github.com/Nanako0129/sepia",
       "source_path": "skills/sepia",
