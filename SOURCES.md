@@ -41,6 +41,7 @@ These entries have no claimed upstream repository. The catalog stores only publi
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
+| Designing UI | Explicitly approved local Codex skill with redacted catalog metadata for condition-based interface design routing. Local user references remain in the private skill. |
 
 ## Methodology
 
