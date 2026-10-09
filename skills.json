@@ -543,7 +543,7 @@
       "id": "sepia",
       "name": "Sepia",
       "category": "writing-and-communication",
-      "description": "Combines structure-aware narrative and professional-prose routes with conditional formatting guidance and evidence-based model-specific rules.",
+      "description": "Combines structure-aware narrative and professional-prose routes with conditional surface-style and formatting checks plus evidence-based, non-detector model guidance.",
       "installed_name": "sepia",
       "source_repository": "https://github.com/Nanako0129/sepia",
       "source_path": "skills/sepia",
