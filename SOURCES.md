@@ -1,6 +1,6 @@
 # Sources and provenance
 
-This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-09.
+This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-10.
 
 ## Included upstream repositories
 
@@ -30,7 +30,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 ## Explicitly approved local entries
 
-These entries have no claimed upstream repository. The catalog stores only public-safe descriptions.
+These entries have no claimed upstream repository. The descriptions are public-safe, and the two approved first-party packages are under skills/.
 
 | Skill | Why it is included |
 | --- | --- |
@@ -41,7 +41,8 @@ These entries have no claimed upstream repository. The catalog stores only publi
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
-| Designing UI | Explicitly approved local Codex skill for contextual interface design with a mandatory interaction and craft review, conditional Apple-platform treatments, UX and accessibility guidance, release readiness, and application-security review. Private references remain outside the public catalog. |
+| Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, optional website and UX guidance, and conditional release readiness. |
+| Securitymaxxing | First-party portable application-security skill with 70 architecture-aware checks, pre-build and post-build guidance, and authorized testing limits. |
 
 ## Methodology
 

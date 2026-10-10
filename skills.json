@@ -705,14 +705,25 @@
       "source_snapshot": "develop"
     },
     {
-      "id": "designing-ui",
-      "name": "Designing UI",
+      "id": "designmaxxing",
+      "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Contextual interface design for websites, apps, games, widgets, components, prototypes, and design systems. Includes a mandatory interaction and craft review, conditional Apple-platform treatments, website and UX guidance, accessibility, release readiness, and application-security review.",
-      "installed_name": "designing-ui",
+      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, optional website and UX guidance, and conditional release readiness.",
+      "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
-      "provenance": "explicitly approved local Codex skill; redacted catalog entry",
+      "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
+      "source_snapshot": null
+    },
+    {
+      "id": "securitymaxxing",
+      "name": "Securitymaxxing",
+      "category": "security",
+      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It contains 70 conditional checks, pre-build and post-build review guidance, and authorized testing boundaries.",
+      "installed_name": "securitymaxxing",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
       "source_snapshot": null
     }
   ]
