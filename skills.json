@@ -708,7 +708,7 @@
       "id": "designing-ui",
       "name": "Designing UI",
       "category": "creative-and-visual-work",
-      "description": "Contextual interface design for websites, apps, games, widgets, components, prototypes, and design systems. Includes optional website features and UX principles, plus conditional accessibility and release readiness, with application-security review for web/API access, dependencies, AI features, data protection, and operations.",
+      "description": "Contextual interface design for websites, apps, games, widgets, components, prototypes, and design systems. Includes a mandatory interaction and craft review, conditional Apple-platform treatments, website and UX guidance, accessibility, release readiness, and application-security review.",
       "installed_name": "designing-ui",
       "source_repository": null,
       "source_path": null,
