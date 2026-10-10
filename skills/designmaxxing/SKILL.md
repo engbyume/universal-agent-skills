@@ -32,6 +32,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Read references/ux-principles.md when a relevant decision could benefit from those prompts or when requested. Treat the concepts as optional heuristics, not universal laws.
 - For website work, read references/website-enhancements.md and add only features that solve a real user need.
 - For products planned for public release, read references/release-readiness.md when claims, personal data, forms, purchases, tracking, third-party services, or user-generated content are relevant. Apply only the checks that fit the product and target markets. This is not legal advice.
+- For substantial design reviews, new journeys, or cross-platform experiences, read references/design-review-checklist.md and apply only the sections that fit. For small targeted edits, use only matching prompts. The checklist does not replace user research or accessibility testing.
 - When implementation security work is in scope, route to the separate securitymaxxing skill. Keep security implementation checklists and tests in that skill.
 
 ## Choose a visual direction
