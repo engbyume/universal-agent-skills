@@ -725,6 +725,17 @@
       "source_path": null,
       "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
       "source_snapshot": null
+    },
+    {
+      "id": "verify-fitlab",
+      "name": "Verify FitLab",
+      "category": "developer-workflows",
+      "description": "Project-local verification workflow for FitLab's profile, closet, fit-reference, and outfit features using a headed local browser and synthetic data.",
+      "installed_name": "verify-fitlab",
+      "source_repository": null,
+      "source_path": "skills/verify-fitlab",
+      "provenance": "explicitly approved first-party package; portable, synthetic-data-only, and redacted",
+      "source_snapshot": null
     }
   ]
 }

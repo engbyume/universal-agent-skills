@@ -30,7 +30,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 ## Explicitly approved local entries
 
-These entries have no claimed upstream repository. The descriptions are public-safe, and the two approved first-party packages are under skills/.
+These entries have no claimed upstream repository. The descriptions are public-safe, and the approved first-party packages are under skills/.
 
 | Skill | Why it is included |
 | --- | --- |
@@ -43,6 +43,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
 | Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, optional website and UX guidance, and conditional release readiness. |
 | Securitymaxxing | First-party portable application-security skill with 70 architecture-aware checks, pre-build and post-build guidance, and authorized testing limits. |
+| Verify FitLab | First-party local app-verification skill for headed browser flows with synthetic data and redacted evidence. |
 
 ## Methodology
 
