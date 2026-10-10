@@ -1,18 +1,33 @@
 ---
 name: designmaxxing
-description: Use when designing, specifying, reviewing, or changing the visual appearance, interaction, usability, or accessibility of a website, app, game, widget, component, prototype, or design system.
+description: First-pass UI/UX guidance for planning, specifying, reviewing, or changing user-facing design, interactions, usability, or accessibility across websites, apps, games, widgets, and design systems. Load before matching design specialists.
 ---
 
 # Designmaxxing
 
 Use this skill when a task includes interface design. Apply it as a conditional design guide, not as one visual style or a universal checklist.
 
+## First-pass routing
+
+- Load this baseline after mandatory process skills and before design specialists when a task includes user-facing UI/UX work for a website, app, game, widget, component, prototype, or design system.
+- If the same software task includes application-security work, load securitymaxxing in this first pass too. Load both baselines before specialists when both apply.
+- After the baseline or baselines, use only matching specialist skills from the active runtime catalog. Specialists add narrower platform, tool, accessibility, or design-system guidance.
+
+## Related specialist skills
+
+- Visual design and design systems: frontend-design, ui-ux-pro-max:design, ui-ux-pro-max:ui-styling, ui-ux-pro-max:design-system, and open-pencil.
+- Game interfaces: game-studio:game-ui-frontend.
+- Native interfaces: expo:building-native-ui, build-ios-apps:swiftui-ui-patterns, or build-macos-apps:swiftui-patterns.
+- Accessibility debugging: a11y-debugging.
+- Figma work: use figma:figma-use first, then the matching figma:figma-implement-design, figma:figma-generate-design, or figma:figma-generate-library skill.
+- Use only skills available in the active runtime. Do not load the full specialist catalog or treat a skill name as permission to use a plugin or external service.
+
 ## Start with the product
 
 - Follow the current request and active project instructions. Identify the product, user, task, content, brand, existing design system, platform, input methods, target sizes, and release context before choosing a direction.
 - Distinguish marketing pages, product interfaces, desktop and mobile apps, game menus and HUDs, real-time experiences, inline widgets, dashboards, prototypes, and design systems. Respect host themes and platform conventions.
 - For redesigns, inspect the current interface. Preserve its information structure, brand assets, and copy unless the request asks for changes.
-- Select only references and design skills that match the task. Do not load every design or media skill.
+- After this baseline, select only references and matching specialist skills from the list above. Do not load every design or media skill.
 - Use references/apple-design.md for a mandatory interaction and craft review on every UI task. Apply Apple-specific visual and motion treatments only when they fit the product, platform, user direction, and accessibility needs. Native Apple interfaces must also follow current Apple Human Interface Guidelines and platform APIs.
 - Read references/ux-principles.md when a relevant decision could benefit from those prompts or when requested. Treat the concepts as optional heuristics, not universal laws.
 - For website work, read references/website-enhancements.md and add only features that solve a real user need.

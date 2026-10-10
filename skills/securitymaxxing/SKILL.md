@@ -1,9 +1,22 @@
 ---
 name: securitymaxxing
-description: Use when planning, building, reviewing, testing, or preparing a website, app, game, API, AI feature, or other software for release and security risks need assessment.
+description: First-pass application-security baseline for planning, building, changing, reviewing, testing, or preparing software for release. Load before matching security specialists and run applicable pre-build and post-build checks for websites, apps, games, APIs, and AI features.
 ---
 
 # Securitymaxxing
+
+## First-pass routing
+
+Load this baseline after mandatory process skills and before security specialists or implementation for software planning, building, changing, reviewing, testing, and release preparation. If user-facing UI/UX is in scope, load designmaxxing in this same first pass. When both apply, load both baselines before specialists. Then select only matching specialist skills from the active runtime catalog.
+
+## Related specialist skills
+
+- Defensive code review: security-review, as required in the pre-build workflow below.
+- Phase-specific review: codex-security:threat-model, codex-security:finding-discovery, codex-security:attack-path-analysis, codex-security:validation, and codex-security:fix-finding when the task enters the matching phase.
+- Stack-specific guidance: supabase:supabase, build-web-apps:stripe-best-practices, vercel:auth, vercel:payments, or the matching skill for the stack in use.
+- Full security scans: use security-scan or codex-security:security-scan only when the user requests a full security scan.
+- Authorized adversarial testing: strix-web-security, redteam-hunting, mantishack, and tamper-fuzzing only for an owned or explicitly authorized target with a defined scope. Do not invoke these automatically.
+- Use only skills available in the active runtime. A skill reference does not grant access to a tool, service, target, or account.
 
 ## Purpose and routing
 
