@@ -708,7 +708,7 @@
       "id": "designing-ui",
       "name": "Designing UI",
       "category": "creative-and-visual-work",
-      "description": "Conditionally guides interface design for websites, apps, widgets, components, prototypes, and design systems while preserving product and platform context. Includes optional website feature ideas with accessibility and privacy safeguards; visual patterns remain context-sensitive choices.",
+      "description": "Conditionally guides interface design for websites, apps, widgets, components, prototypes, and design systems while preserving product and platform context. Offers optional website features and contextual UX principles with accessibility safeguards; visual patterns remain context-sensitive choices.",
       "installed_name": "designing-ui",
       "source_repository": null,
       "source_path": null,
