@@ -39,11 +39,15 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 
 - Choose typography, icons, color, density, surface, corner shape, motion, and layout to fit the brief, brand, platform, content, accessibility needs, and existing components.
 - Do not impose a default font, icon set, palette, corner style, animation, or design system across products. When design references conflict, follow the current user direction and active project specification.
-- Use Dqnamo Kitchen as an optional design-asset reference for selected components, interactions, motion, and visual treatments: [dqnamo.com/kitchen](https://www.dqnamo.com/kitchen). Examples include tactile controls, hold-to-confirm, magnetic drag targets, cassette controls, cards, and loaders. Adapt patterns to the current design system. Check reuse terms before copying code or assets.
+- For every new website, app, game, or major UI direction, read [references/design-asset-sources.md](references/design-asset-sources.md). It lists the approved asset sources, the no-generated-production-assets rule, and the required research-before-mockup workflow.
+- When web implementation or hosting choices are part of the design task, read references/stack-preferences.md. Apply those defaults only to new or unconstrained web work; preserve existing stacks and native or game platform requirements.
+- Do not generate or hand-create production design assets such as logos, illustrations, photos, icon sets, textures, decorative graphics, sprites, or 3D art. Reuse current project or user-provided assets, or source licensed assets from the approved set. You may implement layouts and ordinary UI components in code. A concept mockup is allowed when it is clearly labeled and grounded in research; do not ship its placeholder or generated artwork as an asset. A later explicit user request can override this restriction.
+- Before settling on a new direction or major journey, review at least two relevant products, websites, component examples, or mockups where available. Record their URLs and the patterns you plan to adapt. Public browsing may be used for design research, but sites outside the approved asset list are reference-only and do not become asset sources. Recreate useful patterns in a distinct direction; do not copy complete screens, branding, or signature artwork.
+- Aim for polished, premium execution that feels unique to this product, audience, and platform. Do not reuse one visual template across different products by habit.
 - Avoid polished-template defaults. The following are smell tests, not absolute bans. Keep a pattern when it serves the product, brand, content, platform, or user task. Use it minimally when it does not.
 
 1. Harsh gradients: use strong gradients only when they support the brand, depth, or hierarchy.
-2. Loose or mismatched icons: keep icon meanings, stroke, size, and optical alignment coherent. A library such as Lucide is fine when it fits.
+2. Loose or mismatched icons: keep icon meanings, stroke, size, and optical alignment coherent. Reuse existing project or platform icon sets. For new icon assets, follow the approved source list. Do not draw or generate a new icon family.
 3. Pure white backgrounds: choose surfaces for the product and reading conditions. Use pure white when it fits.
 4. Rainbow coloring: use a limited, purposeful palette unless the information needs more.
 5. Drop shadows: use restrained, consistent elevation when it explains depth or interaction.

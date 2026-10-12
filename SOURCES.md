@@ -1,6 +1,6 @@
 # Sources and provenance
 
-This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-10.
+This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-12.
 
 ## Included upstream repositories
 
@@ -28,6 +28,8 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Official Headroom source installed as a local compression tool; use it as a mutually exclusive alternative to Lean CTX and RTK. |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Official Rust Token Killer source built and installed as a command-output optimizer; bundled agent skills were not installed. |
 
+| [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
+
 ## Explicitly approved local entries
 
 These entries have no claimed upstream repository. The descriptions are public-safe, and the two approved first-party packages are under skills/.
@@ -41,8 +43,8 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
-| Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, optional website and UX guidance, and conditional release readiness. |
-| Securitymaxxing | First-party portable application-security skill with 70 architecture-aware checks, pre-build and post-build guidance, and authorized testing limits. |
+| Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack guidance. |
+| Securitymaxxing | First-party portable application-security skill with 70 core checks and 19 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack guidance. |
 
 ## Methodology
 

@@ -708,7 +708,7 @@
       "id": "designmaxxing",
       "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, optional website and UX guidance, and conditional release readiness.",
+      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack guidance.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
@@ -719,12 +719,23 @@
       "id": "securitymaxxing",
       "name": "Securitymaxxing",
       "category": "security",
-      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It contains 70 conditional checks, pre-build and post-build review guidance, and authorized testing boundaries.",
+      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 19 conditional platform and lifecycle checks, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack guidance.",
       "installed_name": "securitymaxxing",
       "source_repository": null,
       "source_path": null,
       "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
       "source_snapshot": null
+    },
+    {
+      "id": "apify-ultimate-scraper",
+      "name": "Apify Ultimate Scraper",
+      "category": "research-and-investigation",
+      "description": "Uses official Apify Actors for user-requested platform-specific scraping with first-login, secret-handling, target authorization, and cost-approval safeguards.",
+      "installed_name": "apify-ultimate-scraper",
+      "source_repository": "https://github.com/apify/agent-skills",
+      "source_path": "skills/apify-ultimate-scraper",
+      "provenance": "Official Apify-maintained skill; conditional static audit with no critical hits; local safety overlay adds login and paid-run controls.",
+      "source_snapshot": "d522584df6d01746d76b0c674f375cc7d48a838f"
     }
   ]
 }

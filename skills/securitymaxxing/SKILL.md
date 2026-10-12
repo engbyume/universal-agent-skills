@@ -13,7 +13,7 @@ Load this baseline after mandatory process skills and before security specialist
 
 - Defensive code review: security-review, as required in the pre-build workflow below.
 - Phase-specific review: codex-security:threat-model, codex-security:finding-discovery, codex-security:attack-path-analysis, codex-security:validation, and codex-security:fix-finding when the task enters the matching phase.
-- Stack-specific guidance: supabase:supabase, build-web-apps:stripe-best-practices, vercel:auth, vercel:payments, or the matching skill for the stack in use.
+- Stack-specific guidance: read references/stack-preferences.md when choosing a new web stack or cloud provider, then use the matching skill for the selected or existing stack. Load Supabase guidance only when the project already uses it or the user explicitly asks for it.
 - Full security scans: use security-scan or codex-security:security-scan only when the user requests a full security scan.
 - Authorized adversarial testing: strix-web-security, redteam-hunting, mantishack, and tamper-fuzzing only for an owned or explicitly authorized target with a defined scope. Do not invoke these automatically.
 - Use only skills available in the active runtime. A skill reference does not grant access to a tool, service, target, or account.
@@ -26,7 +26,7 @@ Apply the active project instructions and the user's current request. This skill
 
 ## Before building or changing software
 
-1. Identify the product, target platform, architecture, deployment model, audience, and applicable threat model. Distinguish websites, APIs, native apps, games, browser clients, backend services, AI features, and third-party integrations.
+1. Identify the product, target platform, architecture, deployment model, audience, and applicable threat model. Read references/stack-preferences.md when choosing technologies or hosting for new web work. Distinguish websites, APIs, native apps, games, browser clients, backend services, AI features, and third-party integrations. Preserve an established stack unless the user requests a change or evidence shows it does not fit.
 2. Map the data and trust boundaries relevant to the change: sensitive data and secrets, authentication and authorization, sessions, APIs, user input, uploads and file access, outbound requests, payments, webhooks, databases, cloud configuration, CI/CD, dependencies, tenants, AI prompts and tools, logs, backups, and production environments.
 3. Read the project's active security instructions and use the installed `security-review` skill. Read `references/application-security-checks.md` and evaluate all 70 core checks against the actual architecture and threat model. Read `references/conditional-platform-security-checks.md` and assess the 19 additional checks when their platform or lifecycle conditions apply.
 4. For each applicable risk, define the control and a concrete way to verify it before implementation. Mark checks as not applicable only with a reason. Do not treat a missing feature as a vulnerability by default, and do not let conditional checks disappear when the related feature exists.
