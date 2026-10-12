@@ -59,6 +59,8 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
+- 2026-10-12: Added a portable autonomy and hook-free fallback check for active skills, including routine authorized work, genuine action boundaries, and complete inventory audits.
+
 - Repository links are upstream links, not copies or forks created by this catalog.
 - On September 28, 2026, redacted local agent instructions were clarified to separate
   user authorization from goal-state evidence, avoid repeated continuation prompts,

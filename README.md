@@ -48,6 +48,7 @@ The exclusion policy is deliberately conservative. A repository may be public an
 - [`skills/`](skills/): explicitly approved, redacted first-party skill packages
 - [`frameworks/yaml-wiki-framework.md`](frameworks/yaml-wiki-framework.md): user and agent guide with a copyable prompt
 - [`frameworks/yaml-wiki-framework.yaml`](frameworks/yaml-wiki-framework.yaml): machine-readable framework contract
+- [`frameworks/skill-autonomy-compatibility.md`](frameworks/skill-autonomy-compatibility.md): routine autonomy, genuine action boundaries, and hook-free skill checks
 
 ### YAML Wiki Framework
 
