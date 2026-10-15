@@ -31,6 +31,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
 | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. Added 2026-10-14 after public-safety review. |
 | [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | Apache-2.0 source pinned at commit `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`; includes the skill-inspector package for mandatory no-LLM scanning and source-level review. Added 2026-10-15. |
+| [garrytan/gbrain](https://github.com/garrytan/gbrain) | Owner-requested, redacted local-first memory adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; it does not enable automatic capture, provider calls, or machine-specific configuration. |
 
 ## Explicitly approved local entries
 

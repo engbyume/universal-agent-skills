@@ -23,10 +23,12 @@ The catalog does not include:
 - Aside skills or other bundled platform skills
 - Third-party skills with no verifiable GitHub source
 - Unapproved local-only skills and user-specific private operating instructions
-- Vendor or service integration skills that are tied to a single product or hosted tool
+- Vendor or service integration skills tied to a single product or hosted tool, unless explicitly owner-approved as a narrow, public-safe first-party adapter
 - Private files, `.env` files, API keys, cookies, prompts, or machine-specific paths
 
 The exclusion policy is deliberately conservative. A repository may be public and still be left out if the installed skill is primarily a wrapper for a particular service or local runtime.
+
+The owner-approved exception is gbrain-memory, a redacted local-first memory adapter requested as a mandatory cross-agent route. It uses bounded read-only recall, keeps automatic capture and provider calls off, and continues with existing memory when GBrain is unavailable. It contains no machine-specific configuration.
 
 ## Categories
 

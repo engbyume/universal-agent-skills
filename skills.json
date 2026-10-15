@@ -8,8 +8,11 @@
       "Aside and bundled platform skills",
       "Skills with no verifiable GitHub origin",
       "Unapproved local-only or Jeremy-specific operating instructions",
-      "Vendor-specific integrations and hosted-service wrappers",
+      "Vendor-specific integrations and hosted-service wrappers without explicit owner approval for a narrow, public-safe first-party adapter",
       "Private files, credentials, environment files, and machine paths"
+    ],
+    "explicit_exceptions": [
+      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration."
     ]
   },
   "skills": [
@@ -768,6 +771,17 @@
       "source_repository": null,
       "source_path": null,
       "provenance": "explicitly approved first-party public-safe adaptation; excludes private runtime paths and machine-specific settings.",
+      "source_snapshot": null
+    },
+    {
+      "id": "gbrain-memory",
+      "name": "GBrain Memory",
+      "category": "memory-and-knowledge",
+      "description": "Applies one bounded, read-only GBrain recall before each prompt when a local or already-authorized connection is healthy; preserves provenance, treats records as evidence, keeps automatic capture and provider-backed operations off, and continues with existing memory when unavailable.",
+      "installed_name": "gbrain-memory",
+      "source_repository": "https://github.com/garrytan/gbrain",
+      "source_path": null,
+      "provenance": "Owner-requested, public-safe first-party adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; no local machine configuration.",
       "source_snapshot": null
     }
   ]
