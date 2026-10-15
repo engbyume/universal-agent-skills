@@ -12,6 +12,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Load this baseline after mandatory process skills and before design specialists when a task includes user-facing UI/UX work for a website, app, game, widget, component, prototype, or design system.
 - If the same software task includes application-security work, load securitymaxxing in this first pass too. Load both baselines before specialists when both apply.
 - After the baseline or baselines, use only matching specialist skills from the active runtime catalog. Specialists add narrower platform, tool, accessibility, or design-system guidance.
+- When a user directly authorizes a build, treat design concepts and specialist reviews as internal quality checks. Do not require a second approval before reversible local implementation. Pause only for a user-requested review, an unresolved material choice, or a genuine authority boundary. Keep account access, paid use, consent, external publication, production changes, and destructive actions gated.
 
 ## Related specialist skills
 
@@ -30,7 +31,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - After this baseline, select only references and matching specialist skills from the list above. Do not load every design or media skill.
 - Use references/apple-design.md for a mandatory interaction and craft review on every UI task. Apply Apple-specific visual and motion treatments only when they fit the product, platform, user direction, and accessibility needs. Native Apple interfaces must also follow current Apple Human Interface Guidelines and platform APIs.
 - Read references/ux-principles.md when a relevant decision could benefit from those prompts or when requested. Treat the concepts as optional heuristics, not universal laws.
-- For website work, read references/website-enhancements.md and add only features that solve a real user need.
+- For any website, read references/website-enhancements.md. Complete its public launch baseline before release; treat the enhancement ideas as conditional.
 - For products planned for public release, read references/release-readiness.md when claims, personal data, forms, purchases, tracking, third-party services, or user-generated content are relevant. Apply only the checks that fit the product and target markets. This is not legal advice.
 - For substantial design reviews, new journeys, or cross-platform experiences, read references/design-review-checklist.md and apply only the sections that fit. For small targeted edits, use only matching prompts. The checklist does not replace user research or accessibility testing.
 - When implementation security work is in scope, route to the separate securitymaxxing skill. Keep security implementation checklists and tests in that skill.
