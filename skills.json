@@ -747,6 +747,28 @@
       "source_path": "SKILL.md",
       "provenance": "CC BY 4.0 Codex adaptation of audited upstream commit 56e890712273ce231b478adc56ee2eb81101c3d6; public-safe and hook-free.",
       "source_snapshot": "56e890712273ce231b478adc56ee2eb81101c3d6"
+    },
+    {
+      "id": "skill-inspector",
+      "name": "Skill Inspector",
+      "category": "security",
+      "description": "Mandatory agent-skill intake review using NVIDIA SkillSpector, complete-coverage checks, source-level triage, and removal only when malicious behavior is confirmed.",
+      "installed_name": "skill-inspector",
+      "source_repository": "https://github.com/NVIDIA/skillspector",
+      "source_path": "skills/skill-inspector",
+      "provenance": "Apache-2.0 upstream package adapted at commit 4c52fbb83bbca0dd13f2685453c9b661d8c95bf8; local overlay requires no-LLM scanning and source-confirmed removal.",
+      "source_snapshot": "4c52fbb83bbca0dd13f2685453c9b661d8c95bf8"
+    },
+    {
+      "id": "universal-skill-audit",
+      "name": "Universal Skill Audit",
+      "category": "security",
+      "description": "Public-safe skill intake guidance for source provenance, Skillspector scanning, coverage review, source-level verdicts, and safe continuation when a scan blocks installation.",
+      "installed_name": "universal-skill-audit",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party public-safe adaptation; excludes private runtime paths and machine-specific settings.",
+      "source_snapshot": null
     }
   ]
 }

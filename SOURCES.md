@@ -30,6 +30,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
 | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. Added 2026-10-14 after public-safety review. |
+| [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | Apache-2.0 source pinned at commit `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`; includes the skill-inspector package for mandatory no-LLM scanning and source-level review. Added 2026-10-15. |
 
 ## Explicitly approved local entries
 
@@ -46,6 +47,8 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
 | Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack guidance. |
 | Securitymaxxing | First-party portable application-security skill with 70 core checks and 19 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack guidance. |
+| Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
+| Universal Skill Audit | Public-safe first-party guidance for skill-source provenance, mandatory Skillspector scans, complete coverage, and evidence-based install decisions. |
 
 ## Methodology
 
@@ -60,6 +63,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
+- 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
 - 2026-10-12: Added a portable autonomy and hook-free fallback check for active skills, including routine authorized work, genuine action boundaries, and complete inventory audits.
 
 - Repository links are upstream links, not copies or forks created by this catalog.
