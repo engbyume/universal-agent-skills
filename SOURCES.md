@@ -29,6 +29,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Official Rust Token Killer source built and installed as a command-output optimizer; bundled agent skills were not installed. |
 
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
+| [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. Added 2026-10-14 after public-safety review. |
 
 ## Explicitly approved local entries
 
