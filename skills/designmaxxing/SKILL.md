@@ -21,6 +21,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Native interfaces: expo:building-native-ui, build-ios-apps:swiftui-ui-patterns, or build-macos-apps:swiftui-patterns.
 - Accessibility debugging: a11y-debugging.
 - Figma work: use figma:figma-use first, then the matching figma:figma-implement-design, figma:figma-generate-design, or figma:figma-generate-library skill.
+- System architecture, when relevant: load platform-architecture for backend boundaries, distributed systems, data consistency, messaging, scaling, deployment, observability, or recovery decisions that affect the product. Keep the design review focused on user-facing experience.
 - Use only skills available in the active runtime. Do not load the full specialist catalog or treat a skill name as permission to use a plugin or external service.
 
 ## Start with the product

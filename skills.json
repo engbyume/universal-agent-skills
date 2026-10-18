@@ -733,7 +733,7 @@
       "id": "designmaxxing",
       "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack plus Appify/Firecrawl research guidance.",
+      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, Appify/Firecrawl research guidance, and conditional Platform Architecture routing.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
