@@ -15,6 +15,13 @@ The approved source set consists of user-provided project assets, an existing us
 | [Dqnamo Kitchen](https://www.dqnamo.com/kitchen) | Previously approved reference for interactive components, tactile controls, and motion patterns. | Adapt interaction ideas to the product. Check terms before copying any code or asset. |
 | Existing user-curated collection | Assets already saved by the user and made available in the current project context. | Treat these as user-provided assets. Do not guess collection contents or claim access when they are unavailable. |
 
+## Required website inspiration reference
+
+- For every new website or page, website redesign, or new custom website-component design, check [Awwwards](https://www.awwwards.com/) before choosing the visual direction. Search for a relevant winning site, nominee, category, collection, or element. For component work, use its UI, interaction, or Elements references when relevant.
+- Include one relevant Awwwards example among the at least two references required below. Record the direct URL, the pattern or interaction that matters, and how it will be adapted to the product.
+- Awwwards is an inspiration finder, not an approved production-asset or code source. Do not copy or ship its screenshots, artwork, logos, fonts, templates, or code. Continue to source production assets only from the approved set above unless the user explicitly approves another source; verify any specific reuse terms.
+- If Awwwards is unavailable or has no relevant example, state that in the design notes and continue with other relevant references. Do not claim it was checked or block authorized work.
+
 ## Approved component primitives
 
 - Use the official [shadcn/ui](https://ui.shadcn.com/) component system and registry for React projects that fit the user's web stack. Set up or extend the design system in the active project with the companion shadcn skill.
@@ -32,10 +39,10 @@ The approved source set consists of user-provided project assets, an existing us
 
 ## Research before design
 
-- For every new app, site, game, or major UI direction, inspect at least two relevant products, websites, components, or mockups when available. Use the four new galleries as quick discovery sources. If they do not provide enough examples, public web research may find comparable products for reference only.
+- For every new app, site, game, or major UI direction, inspect at least two relevant products, websites, components, or mockups when available. Use the curated galleries as quick discovery sources. For every new website or page, website redesign, or new custom website-component design, Awwwards must be one of those references as described above. If the curated sources do not provide enough examples, public web research may find comparable products for reference only.
 - Record the reference URLs, the relevant interaction or visual pattern, and how the design will adapt it to the current audience, brand, platform, content, accessibility needs, and design system.
 - Recreate the useful interaction or information pattern, not the complete screen, product identity, logo, or signature artwork. A reference is evidence for design decisions, not permission to copy.
 - If the brief lacks visual direction, research comparable work before making a mockup. An original mockup is allowed as a clearly labeled concept. Use placeholders or approved assets, and do not present the mockup as a functioning product demo or ship it as production artwork.
 - Aim for polished, premium craft and a distinctive result for each product. Premium describes the quality of execution, not one universal visual style. Do not recycle a template across unrelated products.
 
-Research-source snapshot: 2026-10-12.
+Research-source snapshot: 2026-10-17.
