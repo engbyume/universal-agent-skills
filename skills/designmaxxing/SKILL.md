@@ -13,6 +13,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - If the same software task includes application-security work, load securitymaxxing in this first pass too. Load both baselines before specialists when both apply.
 - After the baseline or baselines, use only matching specialist skills from the active runtime catalog. Specialists add narrower platform, tool, accessibility, or design-system guidance.
 - When a user directly authorizes a build, treat design concepts and specialist reviews as internal quality checks. Do not require a second approval before reversible local implementation. Pause only for a user-requested review, an unresolved material choice, or a genuine authority boundary. Keep account access, paid use, consent, external publication, production changes, and destructive actions gated.
+- In Codex, use Computer Use by default for UI design, implementation, and verification whenever a runnable product or relevant visual reference can be opened in a browser or desktop app. Inspect the real surface at target viewports and exercise key interactions; source review is complementary. If no runnable target or Computer Use surface is available, continue with the closest supported check and state what could not be verified. Do not use Computer Use to bypass authentication, consent, MFA, or other access controls; existing production and deployment gates still apply.
 
 ## Related specialist skills
 
