@@ -15,11 +15,18 @@ The approved source set consists of user-provided project assets, an existing us
 | [Dqnamo Kitchen](https://www.dqnamo.com/kitchen) | Previously approved reference for interactive components, tactile controls, and motion patterns. | Adapt interaction ideas to the product. Check terms before copying any code or asset. |
 | Existing user-curated collection | Assets already saved by the user and made available in the current project context. | Treat these as user-provided assets. Do not guess collection contents or claim access when they are unavailable. |
 
+## Approved component primitives
+
+- Use the official [shadcn/ui](https://ui.shadcn.com/) component system and registry for React projects that fit the user's web stack. Set up or extend the design system in the active project with the companion shadcn skill.
+- Use [Base UI](https://base-ui.com/react/overview) as the default accessible primitive layer for new React/shadcn projects. It is a component primitive library, not a general asset marketplace.
+- Keep component-gallery websites as pattern references. Add component code only from the official shadcn registry, Base UI, an existing approved project source, or a source the user explicitly names.
+- Do not add an unapproved component registry to broaden the asset set.
+
 ## Asset creation rule
 
 - Do not generate or hand-draw production illustrations, logos, photos, icon families, textures, decorative imagery, sprites, or 3D artwork. This includes using image-generation tools for finished assets.
 - You may write layout, CSS, and ordinary interface components. Reuse existing project assets and platform-native UI elements where they fit.
-- If a required production asset is missing from the approved set, use a non-decorative layout or platform primitive, or ask Jeremy to provide an asset or approve another source. Do not invent a new asset.
+- If a required production asset is missing from the approved set, use a non-decorative layout or platform primitive, or ask the user to provide an asset or approve another source. Do not invent a new asset.
 - A curated gallery is not a reuse license. Check the original asset's provenance, license, attribution, and commercial-use limits before importing it.
 - A clear, current user request can override this rule for a specific asset.
 

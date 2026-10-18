@@ -5,9 +5,15 @@ Apply these defaults when a new web product has no established stack. Existing p
 ## Front end
 
 - Prefer React with TypeScript for new web front ends. Use JavaScript where the project or integration calls for it.
-- Use Tailwind CSS and shadcn/ui when they fit the product and design system.
+- Use Tailwind CSS and shadcn/ui for new React web products. Set up the product-specific design system in the active project with the companion shadcn skill. Use Base UI primitives for a new shadcn project; keep an existing project's configured primitive base.
 - For hosting, compare AWS Amplify with the other cloud options. Prefer Amplify when AWS is the best functional and cost fit.
 - Firecrawl is a page-extraction and crawl tool. It is not a front-end framework or hosting service.
+
+## Public product kickoff and implementation
+
+- For a new public website or app, collect the goal, audience, success outcome, existing integrations and data, and any launch-market constraints before selecting services. Reuse details already supplied and ask only for missing details that affect the recommendation.
+- Recommend specific accounts or services, such as cloud hosting, CRM, identity, payments, analytics, or email, with a short reason and cost or sign-in notes. Tell the user before the first provider login. Never ask for passwords or keys in chat.
+- Apply requested UI work directly to the active codebase or authorized app builder. Do not add hypothetical fallback or backward-compatibility paths. Keep real data and external contracts intact.
 
 ## Back end and database
 

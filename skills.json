@@ -711,7 +711,7 @@
       "id": "platform-architecture",
       "name": "Platform Architecture",
       "category": "developer-workflows",
-      "description": "Portable, conditional guidance for backend and distributed-system design, data consistency, scaling, delivery, observability, and recovery. Routes detailed implementation to matching database, CI/CD, provider, and security skills.",
+      "description": "Conditional guidance for backend and distributed systems, data consistency, push-based real-time updates, scaling, delivery, observability, recovery, and public-product service selection. Routes implementation to matching database, CI/CD, provider, and security skills.",
       "installed_name": "platform-architecture",
       "source_repository": null,
       "source_path": null,
@@ -733,12 +733,23 @@
       "id": "designmaxxing",
       "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, Appify/Firecrawl research guidance, and conditional Platform Architecture routing.",
+      "description": "Portable UI design guidance for websites, apps, games, widgets, and design systems, including public-product goal discovery, service recommendations, direct implementation, shadcn/Base UI setup, real-time push UX, accessibility, approved asset sourcing, and research-before-mockup guidance.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
       "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
       "source_snapshot": null
+    },
+    {
+      "id": "shadcn-ui-design-system",
+      "name": "shadcn/ui Design System",
+      "category": "creative-and-visual-work",
+      "description": "Official shadcn skill for React component work and design-system setup, using Base UI primitives by default for new projects. The local adaptation is pinned and autonomy-reviewed; this catalog links to upstream without copying third-party instructions.",
+      "installed_name": "shadcn-ui-design-system",
+      "source_repository": "https://github.com/shadcn-ui/ui",
+      "source_path": "skills/shadcn",
+      "provenance": "user-requested upstream skill; statically audited at the pinned source commit; local adaptation is not mirrored in this repository",
+      "source_snapshot": "d2fba50ee5b9113008b5bb908563527b7efd2f27"
     },
     {
       "id": "securitymaxxing",

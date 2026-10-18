@@ -9,6 +9,10 @@ description: Conditional backend, database, distributed-systems, deployment, and
 
 Use this skill to choose architecture patterns that solve measured product needs. It is a decision guide, not a checklist that every project must implement.
 
+- At the start of a new public website or app project, clarify the product goal, audience, success outcome, existing tools and data, and launch needs before selecting services. Reuse details already supplied and ask only for material gaps.
+- Recommend relevant provider accounts and integrations, such as a cloud, CRM, identity, payments, analytics, or email service, and explain fit, sign-in needs, and cost. Tell the user before the first provider login. Never request credentials in chat or create accounts or paid resources without authorization.
+- Prefer one current supported path. Do not add fallback implementations or backward-compatibility layers for hypothetical clients or versions. Preserve real user data and verified external contracts.
+
 - Preserve the working stack unless the user asks for a change or evidence shows a real constraint.
 - Define workload, data sensitivity, tenant boundaries, traffic, latency and availability needs, recovery objectives, operating capacity, and cost limits before adding infrastructure.
 - Prefer the smallest architecture that meets those constraints. Do not add microservices, sharding, Kubernetes, multi-region deployment, or a service mesh for appearance.
@@ -23,14 +27,16 @@ Use this skill to choose architecture patterns that solve measured product needs
 - Use a CDN for static or safely cacheable content. Define edge-cache keys, TTLs, invalidation, stale-data behavior, and tenant or authorization boundaries before sharing cached responses.
 - Apply rate limiting to abuse-sensitive, costly, or capacity-limited actions. Choose the key and quota from the threat model. A process-local limiter does not coordinate across replicas.
 - Choose DNS, TCP or UDP, HTTP/2 or HTTP/3, and gRPC from client support, protocol needs, and measured performance.
-- For live updates, compare WebSockets, Server-Sent Events, and long polling based on directionality, connection length, proxy behavior, reconnection, and hosting limits.
-- Use API versioning deliberately for public contracts. Define compatibility and deprecation expectations; use semantic versioning for published packages or contracts when it fits. Keep webhooks authenticated, bounded, idempotent, and safe to retry.
+- When a product feature requires user-visible live data, use server push or a managed subscription instead of client polling. Choose WebSockets for two-way or high-frequency interaction, Server-Sent Events for one-way server updates, or a platform's reactive subscription when it fits the data model. Do not use periodic polling or long polling as a fallback for live UI.
+- Convex reactive queries and Supabase Realtime are examples, not default backend choices. Preserve the managed PostgreSQL preference by comparing cloud-native options such as AWS AppSync subscriptions or Azure Web PubSub when they fit better.
+- Authorize subscriptions on the server and scope channels to the user or tenant. Clean up subscriptions, reconnect with bounded backoff, detect missed events, and refresh from the authorized source of truth after reconnect. Compare connection, message, fan-out, and egress costs.
+- Add API versioning only when multiple consumers or a published contract require it. Do not create version shims for hypothetical clients. State any required support window and use semantic versioning for packages or contracts when it fits. Keep webhooks authenticated, bounded, idempotent, and safe to retry.
 
 ## Reliability and asynchronous work
 
 - Set explicit timeouts and an end-to-end deadline for each request.
 - Retry only transient failures, with bounded attempts, exponential backoff, jitter, cancellation, and the remaining deadline. Do not retry permanent errors or non-idempotent actions without deduplication.
-- Use circuit breakers when repeated downstream failures could exhaust local resources. Define open, recovery, and fallback behavior.
+- Use circuit breakers when repeated downstream failures could exhaust local resources. Define open and recovery behavior. Add a degraded mode only when the product requires it; do not add generic fallback paths for hypothetical failures.
 - Use message queues for durable asynchronous work and backpressure. Use pub/sub when one event needs independent subscribers. Event-driven architecture fits when producers and consumers need temporal or ownership separation.
 - Expect duplicate delivery unless the system proves otherwise. Make consumers idempotent, align acknowledgements with durable processing, bound payloads and retention, and monitor queue depth and age.
 - Use dead-letter queues or quarantine for poison messages. Restrict replay access and make reprocessing safe.
@@ -63,11 +69,11 @@ Use this skill to choose architecture patterns that solve measured product needs
 
 ## Delivery, observability, and recovery
 
-- Use CI/CD for repeatable builds and checks, and promote the same artifact through environments. Avoid dependency hell with lockfiles, reviewed updates, and a clear compatibility policy. Key build caching on all inputs and reject untrusted cache artifacts.
+- Use CI/CD for repeatable builds and checks, and promote the same artifact through environments. Pin dependencies in lockfiles and review updates. Support only the versions required by real users and contracts. Key build caching on all inputs and reject untrusted cache artifacts.
 - Use infrastructure as code when repeatable environments or auditability justify it. Terraform and Helm fit their corresponding infrastructure needs; review state access, plans, chart versions, and rollback.
 - Use Docker when a container boundary improves portability. Choose Kubernetes only when orchestration benefits justify its cost; consider managed container services when sufficient.
 - Use feature flags to separate deployment from release where gradual exposure or fast disablement helps. Assign owners and remove stale flags.
-- Choose rolling deployments, canary releases, or blue-green deployment from risk, capacity, health signals, and rollback ability. Keep database migrations and schema versioning compatible with old and new application versions.
+- Choose rolling deployments, canary releases, or blue-green deployment only when release risk, capacity, or uptime needs justify them. Keep an operational rollback plan where it reduces release risk. Avoid code-level backward-compatibility layers for hypothetical versions; use direct schema changes when safe and data-preserving migrations when existing records or external contracts require them.
 - Define health checks and separate liveness from readiness where supported. Readiness controls traffic; liveness restarts a stuck process. Avoid restart loops during dependency outages.
 - Instrument logs, metrics, and distributed traces without recording secrets or unnecessary personal data. Monitoring alerts need an owner and runbook.
 - Define SLIs, SLOs, and error budgets where reliability commitments justify them. Use actionable alerts tied to user impact.

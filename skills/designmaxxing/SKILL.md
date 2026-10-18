@@ -27,6 +27,11 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 ## Start with the product
 
 - Follow the current request and active project instructions. Identify the product, user, task, content, brand, existing design system, platform, input methods, target sizes, and release context before choosing a direction.
+- For a new public website or app, begin with a short goal check before recommending accounts or integrations. Capture its main outcome, target users, launch audience or markets, existing tools and data, and business model. If the prompt already gives this information, summarize it instead of repeating questions. Ask only for missing goals that change the product or service recommendation.
+- Use those goals to recommend relevant services and accounts, such as cloud hosting, a CRM, identity, payments, analytics, or email. Explain each recommendation and any likely cost or sign-in need. Tell the user before the first provider sign-in. Never request passwords, tokens, or API keys in chat, and do not create accounts or incur paid charges without authorization.
+- When the user asks to build or edit a product, change the active project or named app builder directly and verify the result there. Do not stop at a concept mockup or create a parallel prototype when implementation was requested. A mockup may guide the implementation.
+- Use one current supported implementation path. Do not add fallback code or backward-compatibility layers for hypothetical old clients or versions. Preserve real user data, security properties, and verified external contracts.
+- When a user-facing feature needs live data, use push subscriptions or another real-time delivery method instead of polling. Load platform-architecture for the transport and provider choice.
 - Distinguish marketing pages, product interfaces, desktop and mobile apps, game menus and HUDs, real-time experiences, inline widgets, dashboards, prototypes, and design systems. Respect host themes and platform conventions.
 - For redesigns, inspect the current interface. Preserve its information structure, brand assets, and copy unless the request asks for changes.
 - After this baseline, select only references and matching specialist skills from the list above. Do not load every design or media skill.
@@ -79,6 +84,13 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 29. Neon colors: avoid them as default accents. Use them for a fitting brand or clear status.
 30. Basic pastel colors: choose colors for the product, brand, contrast, and content instead of defaulting to a generic pastel palette.
 
+## UI primitives and design systems
+
+- For a new React web interface using shadcn/ui, always use the companion shadcn-ui-design-system skill to establish design tokens and components in the active project. Its pinned source is [shadcn-ui/ui at d2fba50](https://github.com/shadcn-ui/ui/tree/d2fba50ee5b9113008b5bb908563527b7efd2f27/skills/shadcn). If the active runtime cannot load the companion, follow the universal skill-intake audit for that pinned source before activating it. The companion uses Base UI primitives by default for new projects.
+- For an existing shadcn project, inspect and extend its current design system. Keep its configured primitive base unless the user requests a migration. Add only components required by the product.
+- For native apps and games, use the platform's own accessible primitives and the matching specialist skill instead of forcing React components into the project.
+- For component patterns and approved source limits, follow [references/design-asset-sources.md](references/design-asset-sources.md).
+
 ## Interaction, states, and accessibility
 
 - Design the states the interface needs, including loading, empty, error, success, disabled, focus, destructive, and undo states.
@@ -88,4 +100,4 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 
 ## Release readiness
 
-Use the conditional checks in references/release-readiness.md when release context calls for them. Verify current official requirements for the target markets and platforms. Do not invent policies, business details, consent, reviews, or claims. A design review cannot guarantee legal compliance or prevent litigation. Refer material legal questions to qualified counsel. This skill does not authorize implementation, use of external assets, publishing, or deployment.
+Use the conditional checks in references/release-readiness.md when release context calls for them. Verify current official requirements for the target markets and platforms. Do not invent policies, business details, consent, reviews, or claims. A design review cannot guarantee legal compliance or prevent litigation. Refer material legal questions to qualified counsel. A direct user request authorizes the requested reversible implementation in the active project. This skill does not grant reuse rights to external assets or authorize paid services, account creation, publication, or production deployment.
