@@ -87,6 +87,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 ## UI primitives and design systems
 
 - For a new React web interface using shadcn/ui, always use the companion shadcn-ui-design-system skill to establish design tokens and components in the active project. Its pinned source is [shadcn-ui/ui at d2fba50](https://github.com/shadcn-ui/ui/tree/d2fba50ee5b9113008b5bb908563527b7efd2f27/skills/shadcn). If the active runtime cannot load the companion, follow the universal skill-intake audit for that pinned source before activating it. The companion uses Base UI primitives by default for new projects.
+- Treat shadcn-ui-design-system as the authority for shadcn setup, the pinned CLI, and autonomy defaults. Load another shadcn guide only for component-specific details it adds, and follow the pinned companion when instructions conflict.
 - For an existing shadcn project, inspect and extend its current design system. Keep its configured primitive base unless the user requests a migration. Add only components required by the product.
 - For native apps and games, use the platform's own accessible primitives and the matching specialist skill instead of forcing React components into the project.
 - For component patterns and approved source limits, follow [references/design-asset-sources.md](references/design-asset-sources.md).
