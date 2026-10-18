@@ -35,7 +35,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 ## Explicitly approved local entries
 
-These entries have no claimed upstream repository. The descriptions are public-safe, and the two approved first-party packages are under skills/.
+These entries have no claimed upstream repository. The descriptions are public-safe, and approved first-party packages are under skills/.
 
 | Skill | Why it is included |
 | --- | --- |
@@ -46,8 +46,10 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
 | Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
-| Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack guidance. |
-| Securitymaxxing | First-party portable application-security skill with 70 core checks and 19 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack guidance. |
+| Designmaxxing | First-party portable UI design skill for contextual visual and interaction design, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack plus Appify/Firecrawl research guidance. Updated 2026-10-17. |
+| Securitymaxxing | First-party portable application-security skill with 70 core checks and 23 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack plus Appify/Firecrawl research guidance. Updated 2026-10-17. |
+| Platform Architecture | First-party conditional guidance for backend, distributed systems, data consistency, delivery, observability, and recovery; routes detailed work to existing specialists. Added 2026-10-17. |
+| Agent-Managed CI/CD | Public-safe first-party release workflow with deployment patterns, health checks, rollback, and explicit release gates. Added 2026-10-17. |
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
 | Universal Skill Audit | Public-safe first-party guidance for skill-source provenance, mandatory Skillspector scans, complete coverage, and evidence-based install decisions. |
 

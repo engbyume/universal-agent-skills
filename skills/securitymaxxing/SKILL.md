@@ -16,6 +16,7 @@ Load this baseline after mandatory process skills and before security specialist
 - Stack-specific guidance: read references/stack-preferences.md when choosing a new web stack or cloud provider, then use the matching skill for the selected or existing stack. Load Supabase guidance only when the project already uses it or the user explicitly asks for it.
 - Full security scans: use security-scan or codex-security:security-scan only when the user requests a full security scan.
 - Authorized adversarial testing: strix-web-security, redteam-hunting, mantishack, and tamper-fuzzing only for an owned or explicitly authorized target with a defined scope. Do not invoke these automatically.
+- Architecture guidance: load platform-architecture when distributed-system, deployment, scaling, or recovery decisions are in scope; keep this skill's security checks authoritative for security controls.
 - Use only skills available in the active runtime. A skill reference does not grant access to a tool, service, target, or account.
 
 ## Purpose and routing
@@ -28,12 +29,12 @@ Apply the active project instructions and the user's current request. This skill
 
 1. Identify the product, target platform, architecture, deployment model, audience, and applicable threat model. Read references/stack-preferences.md when choosing technologies or hosting for new web work. Distinguish websites, APIs, native apps, games, browser clients, backend services, AI features, and third-party integrations. Preserve an established stack unless the user requests a change or evidence shows it does not fit.
 2. Map the data and trust boundaries relevant to the change: sensitive data and secrets, authentication and authorization, sessions, APIs, user input, uploads and file access, outbound requests, payments, webhooks, databases, cloud configuration, CI/CD, dependencies, tenants, AI prompts and tools, logs, backups, and production environments.
-3. Read the project's active security instructions and use the installed `security-review` skill. Read `references/application-security-checks.md` and evaluate all 70 core checks against the actual architecture and threat model. Read `references/conditional-platform-security-checks.md` and assess the 19 additional checks when their platform or lifecycle conditions apply.
+3. Read the project's active security instructions and use the installed `security-review` skill. Read `references/application-security-checks.md` and evaluate all 70 core checks against the actual architecture and threat model. Read `references/conditional-platform-security-checks.md` and assess the 23 additional checks when their platform or lifecycle conditions apply.
 4. For each applicable risk, define the control and a concrete way to verify it before implementation. Mark checks as not applicable only with a reason. Do not treat a missing feature as a vulnerability by default, and do not let conditional checks disappear when the related feature exists.
 
 ## After building or changing software
 
-- Run the relevant security checks and tests for the changed code. Recheck every applicable item among the 70 core checks and 19 conditional checks, including dependencies, build workflows, cloud configuration, and deployed settings when they are in scope.
+- Run the relevant security checks and tests for the changed code. Recheck every applicable item among the 70 core checks and 23 conditional checks, including dependencies, build workflows, cloud configuration, and deployed settings when they are in scope.
 - Use the appropriate static analysis, secret and dependency scanning, permissions review, browser security tests, backup and restore checks, audit and monitoring checks, and other targeted validation supported by the project.
 - Restrict dynamic security testing to a target the user owns or has explicitly authorized. Prefer local or staging targets. Do not test public production or third-party systems without explicit current-task authorization and a defined scope.
 - Fix confirmed findings within the authorized task, then rerun the checks that failed. Record the check, result, evidence, and checks that could not run or were out of scope.
@@ -41,4 +42,4 @@ Apply the active project instructions and the user's current request. This skill
 
 ## Checklist reference
 
-The 70 core checks and their applicability notes are in `references/application-security-checks.md`. The additional 19 conditional checks for platform and lifecycle risks are in `references/conditional-platform-security-checks.md`. Read both references and apply checks that match the architecture. Use current primary security guidance for the stack and threat model.
+The 70 core checks and their applicability notes are in `references/application-security-checks.md`. The additional 23 conditional checks for platform and lifecycle risks are in `references/conditional-platform-security-checks.md`. Read both references and apply checks that match the architecture. Use current primary security guidance for the stack and threat model.

@@ -18,9 +18,9 @@ Apply these defaults when a new web product has no established stack. Existing p
 
 ## Research and scraping
 
-- Use Apify for platform-specific Actors and specialized scraping workflows. Use Firecrawl for known-URL extraction, multi-page crawls, or extraction that replaces several ordinary page reads. Use ordinary web search for general research. Avoid duplicate runs.
-- Before the first account-dependent use, tell the user if sign-in is needed so they can authenticate through the official UI. Never ask for a password or token in chat.
-- Check current Actor pricing and estimate the planned run. Ask for approval before any run that may consume paid credits. A general willingness to pay is not approval for a specific charge.
+- Use Appify for general scraping and downloads when the tool is available and supports the target. Use Firecrawl for known-URL extraction, multi-page crawls, or extraction that replaces several ordinary page reads. Use ordinary web search for general research. Avoid duplicate runs.
+- Before the first account-dependent Appify use, tell the user if sign-in is needed so they can authenticate through the official UI. Never ask for a password or token in chat.
+- Estimate the planned Appify run and obtain approval before any specific paid usage. General willingness to pay is not approval for a specific charge.
 - Keep API tokens in an approved environment or secrets manager. Never source a repository .env file.
 
 ## Analytics and observability

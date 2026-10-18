@@ -708,10 +708,32 @@
       "source_snapshot": "develop"
     },
     {
+      "id": "platform-architecture",
+      "name": "Platform Architecture",
+      "category": "developer-workflows",
+      "description": "Portable, conditional guidance for backend and distributed-system design, data consistency, scaling, delivery, observability, and recovery. Routes detailed implementation to matching database, CI/CD, provider, and security skills.",
+      "installed_name": "platform-architecture",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party package; public-safe and vendor-neutral, with no upstream source claimed",
+      "source_snapshot": null
+    },
+    {
+      "id": "agent-managed-cicd",
+      "name": "Agent-Managed CI/CD",
+      "category": "developer-workflows",
+      "description": "Guarded CI/CD and release-candidate workflow with deployment pattern selection, health verification, rollback planning, and parent-owned release gates.",
+      "installed_name": "agent-managed-cicd",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "public-safe first-party adaptation of an approved local skill; personal identifiers and runtime paths removed",
+      "source_snapshot": null
+    },
+    {
       "id": "designmaxxing",
       "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack guidance.",
+      "description": "Portable interface design guidance for websites, apps, games, widgets, components, prototypes, and design systems, including interaction craft, accessibility, conditional release readiness, approved asset sourcing, research-before-mockup rules, and preferred web stack plus Appify/Firecrawl research guidance.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
@@ -722,7 +744,7 @@
       "id": "securitymaxxing",
       "name": "Securitymaxxing",
       "category": "security",
-      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 19 conditional platform and lifecycle checks, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack guidance.",
+      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 23 conditional platform and lifecycle checks, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack plus Appify/Firecrawl research guidance.",
       "installed_name": "securitymaxxing",
       "source_repository": null,
       "source_path": null,
