@@ -53,6 +53,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Agent-Managed CI/CD | Public-safe first-party release workflow with deployment patterns, health checks, rollback, and explicit release gates. Added 2026-10-17. |
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
 | Universal Skill Audit | Public-safe first-party guidance for skill-source provenance, mandatory Skillspector scans, complete coverage, and evidence-based install decisions. |
+| FitLab Verification | Explicitly approved project-local verification catalog entry. The catalog stores only a redacted summary; the detailed feature map stays with the application. Updated 2026-10-19. |
 
 ## Methodology
 

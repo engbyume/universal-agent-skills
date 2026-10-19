@@ -816,6 +816,17 @@
       "source_path": null,
       "provenance": "Owner-requested, public-safe first-party adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; no local machine configuration.",
       "source_snapshot": null
+    },
+    {
+      "id": "verify-fitlab",
+      "name": "FitLab Verification",
+      "category": "developer-workflows",
+      "description": "Project-local headed FitLab verification with synthetic data, one visible browser window, source-backed page coverage, privacy-safe screenshots and accessibility summaries, and scoped cleanup. The detailed feature map stays with the application.",
+      "installed_name": "verify-fitlab",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "Explicitly approved project-local catalog entry; redacted summary only, with no user data, local paths, or runtime configuration.",
+      "source_snapshot": null
     }
   ]
 }
