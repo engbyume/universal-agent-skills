@@ -3,13 +3,16 @@
   "catalog": "jeremy-agent-skills",
   "owner": "engbyume",
   "policy": {
-    "include_only": "Skills installed from or explicitly sourced to public GitHub repositories.",
+    "include_only": "Skills installed from public GitHub repositories, plus explicitly approved local skills with redacted catalog entries.",
     "exclude": [
       "Aside and bundled platform skills",
       "Skills with no verifiable GitHub origin",
-      "Local-only or Jeremy-specific operating instructions",
-      "Vendor-specific integrations and hosted-service wrappers",
+      "Unapproved local-only or Jeremy-specific operating instructions",
+      "Vendor-specific integrations and hosted-service wrappers without explicit owner approval for a narrow, public-safe first-party adapter",
       "Private files, credentials, environment files, and machine paths"
+    ],
+    "explicit_exceptions": [
+      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration."
     ]
   },
   "skills": [
@@ -424,7 +427,7 @@
       "id": "lean-ctx",
       "name": "Lean Context",
       "category": "agent-efficiency",
-      "description": "Compresses context and exposes focused file, search, shell, session, and graph operations.",
+      "description": "Compresses context and exposes focused file, search, shell, session, and graph operations, with bounded raw-CLI and retry-safe modes plus a writable native fallback for MCP failures.",
       "installed_name": "lean-ctx",
       "source_repository": "https://github.com/yvgude/lean-ctx",
       "source_path": "skills/lean-ctx",
@@ -434,12 +437,23 @@
       "id": "sol-advisor",
       "name": "Sol Advisor",
       "category": "agent-efficiency",
-      "description": "Provides architect-first orchestration with exact native role routing, parent-owned verification, and an explicit Luna app-task lane.",
+      "description": "Routes regular tasks to GPT-6 Luna / Max, hard tasks to GPT-6.1 Sol / High, and very complex short tasks to GPT-6 Astra / High, with cost-aware selection, parent-owned verification, direct-only reserve handling, host-native delegation when rate limits permit, and current-session model evidence.",
       "installed_name": "sol-advisor",
       "source_repository": "https://github.com/DannyMac180/sol-advisor",
       "source_path": "skills/{orchestration,setup}",
       "provenance": "Codex plugin marketplace installation",
       "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
+    },
+    {
+      "id": "sol-foreman",
+      "name": "Sol Foreman",
+      "category": "agent-efficiency",
+      "description": "Coordinates bounded delegated work, routes regular tasks to GPT-6 Luna / Max, hard tasks to GPT-6.1 Sol / High, and very complex short tasks to GPT-6 Astra / High, with same-child repairs, direct-only Luna Reserve, host-native non-GPT delegation, verified active-model evidence, cross-chat goal handoffs, and evidence-backed acceptance.",
+      "installed_name": "sol-foreman",
+      "source_repository": "https://github.com/olsenbrands/sol-foreman",
+      "source_path": "skills/sol-foreman",
+      "provenance": "universal source audit and active shared copy",
+      "source_snapshot": "25b5f143e5e04b0ed54c36be99c48ceb1d783a33"
     },
     {
       "id": "yaml-wiki-framework",
@@ -527,17 +541,292 @@
       "source_path": "skills/opensrc",
       "provenance": "installed Git repository",
       "source_snapshot": "f96078a"
-    }
     },
     {
       "id": "sepia",
       "name": "Sepia",
       "category": "writing-and-communication",
-      "description": "Routes prose through human-writing heuristics for fiction and professional text, with write, review, refactor, and recreate operations.",
+      "description": "Combines structure-aware narrative and professional-prose routes with conditional surface-style and formatting checks plus evidence-based, non-detector model guidance.",
       "installed_name": "sepia",
       "source_repository": "https://github.com/Nanako0129/sepia",
       "source_path": "skills/sepia",
       "provenance": "scoped static audit; repository-level workflow quarantined",
       "source_snapshot": "d8a0f948cc46a0ba0d610df7458c4e8943bfe51a"
+    },
+    {
+      "id": "i-have-adhd",
+      "name": "I Have ADHD",
+      "category": "writing-and-communication",
+      "description": "Shapes agent output for action-first ADHD-friendly reading, state tracking, concise steps, and visible progress.",
+      "installed_name": "i-have-adhd",
+      "source_repository": "https://github.com/ayghri/i-have-adhd",
+      "source_path": "skills/i-have-adhd",
+      "provenance": "universal static audit and installed active copy",
+      "source_snapshot": "58494af57962b2d7a996b4d419474380a299af5e"
+    },
+    {
+      "id": "codex-usage-fallback-router",
+      "name": "Codex Usage Fallback Router",
+      "category": "agent-efficiency",
+      "description": "Monitors Codex account quota and context-window thresholds, routes approved free-model fallbacks on explicit request only (automatic threshold activation disabled 2026-10-01), and requires a verified new-chat handoff at 90% context use or an earlier compaction warning. The local paid-model switcher enforces Luna / Max, GPT-6.1 Sol / High, and Astra / High for standard routes.",
+      "installed_name": "codex-usage-fallback-router",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "codex-harness-free-model-router",
+      "name": "Codex Harness Free Model Router",
+      "category": "agent-efficiency",
+      "description": "Provides a provider-neutral, user-configured Codex model router, local daemon, paid or free lanes, real availability tracking with probe endpoints, and customizable Default Fallback Rules.",
+      "installed_name": "codex-harness-free-model-router",
+      "source_repository": "https://github.com/engbyume/codex-harness-free-model-router",
+      "source_path": "skill",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "b591882"
+    },
+    {
+      "id": "codex-recursive-self-improvement",
+      "name": "Codex Recursive Self-Improvement",
+      "category": "agent-efficiency",
+      "description": "Mandatory post-action gate that turns observed agent mistakes and reusable patterns into bounded, evidence-backed, user-approved improvements for ChatGPT models in the Codex harness.",
+      "installed_name": "codex-recursive-self-improvement",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "SKILL.md",
+      "provenance": "public standalone repository created for this skill",
+      "source_snapshot": "09ca41c"
+    },
+    {
+      "id": "programmatic-tool-calling",
+      "name": "Programmatic Tool Calling",
+      "category": "agent-efficiency",
+      "description": "Mandatory pre-tool audit that selects direct, parallel, or programmatic execution for every ChatGPT and Codex task, with bounded Composio and harness-native workflows when applicable.",
+      "installed_name": "programmatic-tool-calling",
+      "source_repository": "https://github.com/engbyume/codex-recursive-self-improvement",
+      "source_path": "skills/programmatic-tool-calling/SKILL.md",
+      "provenance": "public standalone repository companion skill",
+      "source_snapshot": "fc52786"
+    },
+    {
+      "id": "jeremy-eval-loop",
+      "name": "Eval Loop",
+      "category": "planning-and-quality",
+      "description": "Defines a checkable goal, runs verification after a change, and limits corrections to a bounded number of attempts.",
+      "installed_name": "jeremy-eval-loop",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "autonomous-skill-routing",
+      "name": "Autonomous Skill Routing",
+      "category": "agent-efficiency",
+      "description": "Uses a compact routing index to load only mandatory skills and task or condition matches instead of scanning every skill body.",
+      "installed_name": "autonomous-skill-routing",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "jeremy-agent-mentor",
+      "name": "Agent Mentor",
+      "category": "agent-efficiency",
+      "description": "Checks source authority, permissions, scope, and runtime evidence for task continuation, including verified new-chat handoffs at 90% context use or an earlier compaction warning.",
+      "installed_name": "jeremy-agent-mentor",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "jeremy-batch",
+      "name": "Jeremy Batch",
+      "category": "agent-efficiency",
+      "description": "Batches independent reads, searches, and checks into fewer calls to save rate-limit slots and round trips.",
+      "installed_name": "jeremy-batch",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "composio-cli",
+      "name": "Composio CLI",
+      "category": "agent-efficiency",
+      "description": "Provides mandatory Composio discovery, connection, schema, dry-run, and execution guidance while actual tool calls stay task-scoped.",
+      "installed_name": "composio-cli",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "usage-limit-resume",
+      "name": "Usage Limit Resume",
+      "category": "agent-efficiency",
+      "description": "Captures reset state and resumes blocked work with verified checkpoints, standard-lane priority, reserve safety gates, and cross-chat continuation carry-forward without repeated approval prompts.",
+      "installed_name": "usage-limit-resume",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved local skill; redacted catalog entry",
+      "source_snapshot": null
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "category": "agent-efficiency",
+      "description": "Enforces a YAGNI and stdlib-first ladder so agents choose the shortest correct implementation and avoid unnecessary dependencies.",
+      "installed_name": "ponytail",
+      "source_repository": "https://github.com/DietrichGebert/ponytail",
+      "source_path": "skills/ponytail",
+      "provenance": "approved static audit and existing local source",
+      "source_snapshot": "a945778b4a73b0b78c3c781a594b62cd3a324637"
+    },
+    {
+      "id": "headroom",
+      "name": "Headroom",
+      "category": "agent-efficiency",
+      "description": "Compresses tool output, logs, files, and context through a local proxy or MCP path; use it as the selected compression layer for a task.",
+      "installed_name": "headroom",
+      "source_repository": "https://github.com/headroomlabs-ai/headroom",
+      "source_path": "headroom",
+      "provenance": "conditional static audit of local skill and GitHub source installation",
+      "source_snapshot": "0.37.0"
+    },
+    {
+      "id": "rtk",
+      "name": "RTK Rust Token Killer",
+      "category": "agent-efficiency",
+      "description": "Filters and compresses eligible command output before it reaches an agent, reducing shell-output token cost without installing the repository's bundled agent skills.",
+      "installed_name": "rtk",
+      "source_repository": "https://github.com/rtk-ai/rtk",
+      "source_path": "Cargo.toml and src",
+      "provenance": "official Rust source audit and local cargo installation",
+      "source_snapshot": "develop"
+    },
+    {
+      "id": "platform-architecture",
+      "name": "Platform Architecture",
+      "category": "developer-workflows",
+      "description": "Conditional guidance for backend and distributed systems, data consistency, push-based real-time updates, scaling, delivery, observability, recovery, and public-product service selection. Routes implementation to matching database, CI/CD, provider, and security skills.",
+      "installed_name": "platform-architecture",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party package; public-safe and vendor-neutral, with no upstream source claimed",
+      "source_snapshot": null
+    },
+    {
+      "id": "agent-managed-cicd",
+      "name": "Agent-Managed CI/CD",
+      "category": "developer-workflows",
+      "description": "Guarded CI/CD and release-candidate workflow with deployment pattern selection, health verification, rollback planning, and parent-owned release gates.",
+      "installed_name": "agent-managed-cicd",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "public-safe first-party adaptation of an approved local skill; personal identifiers and runtime paths removed",
+      "source_snapshot": null
+    },
+    {
+      "id": "designmaxxing",
+      "name": "Designmaxxing",
+      "category": "creative-and-visual-work",
+      "description": "Portable UI design guidance for websites, apps, games, widgets, and design systems, including public-product goal discovery, service recommendations, direct implementation, shadcn/Base UI setup, real-time push UX, accessibility, Computer Use by default for Codex UI inspection and interaction checks, approved asset sourcing, distinctive-by-default website design, Awwwards inspiration research, and research-before-mockup guidance.",
+      "installed_name": "designmaxxing",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
+      "source_snapshot": null
+    },
+    {
+      "id": "shadcn-ui-design-system",
+      "name": "shadcn/ui Design System",
+      "category": "creative-and-visual-work",
+      "description": "Official shadcn skill for React component work and design-system setup, using Base UI primitives by default for new projects. The local adaptation is pinned and autonomy-reviewed; this catalog links to upstream without copying third-party instructions.",
+      "installed_name": "shadcn-ui-design-system",
+      "source_repository": "https://github.com/shadcn-ui/ui",
+      "source_path": "skills/shadcn",
+      "provenance": "user-requested upstream skill; statically audited at the pinned source commit; local adaptation is not mirrored in this repository",
+      "source_snapshot": "d2fba50ee5b9113008b5bb908563527b7efd2f27"
+    },
+    {
+      "id": "securitymaxxing",
+      "name": "Securitymaxxing",
+      "category": "security",
+      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 23 conditional platform and lifecycle checks, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack plus Appify/Firecrawl research guidance.",
+      "installed_name": "securitymaxxing",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party package; portable and redacted, with no upstream source claimed",
+      "source_snapshot": null
+    },
+    {
+      "id": "apify-ultimate-scraper",
+      "name": "Apify Ultimate Scraper",
+      "category": "research-and-investigation",
+      "description": "Uses official Apify Actors for user-requested platform-specific scraping with first-login, secret-handling, target authorization, and cost-approval safeguards.",
+      "installed_name": "apify-ultimate-scraper",
+      "source_repository": "https://github.com/apify/agent-skills",
+      "source_path": "skills/apify-ultimate-scraper",
+      "provenance": "Official Apify-maintained skill; conditional static audit with no critical hits; local safety overlay adds login and paid-run controls.",
+      "source_snapshot": "d522584df6d01746d76b0c674f375cc7d48a838f"
+    },
+    {
+      "id": "task-observer",
+      "name": "Task Observer (Codex adaptation)",
+      "category": "agent-efficiency",
+      "description": "Mandatory prompt-start, material-change, and end audits for evidence-backed skill learning and autonomy checks. The Codex-native route is hook-free, keeps authorized reversible work moving, and preserves real action boundaries.",
+      "installed_name": "task-observer",
+      "source_repository": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+      "source_path": "SKILL.md",
+      "provenance": "CC BY 4.0 Codex adaptation of audited upstream commit 56e890712273ce231b478adc56ee2eb81101c3d6; public-safe and hook-free.",
+      "source_snapshot": "56e890712273ce231b478adc56ee2eb81101c3d6"
+    },
+    {
+      "id": "skill-inspector",
+      "name": "Skill Inspector",
+      "category": "security",
+      "description": "Mandatory agent-skill intake review using NVIDIA SkillSpector, complete-coverage checks, source-level triage, and removal only when malicious behavior is confirmed.",
+      "installed_name": "skill-inspector",
+      "source_repository": "https://github.com/NVIDIA/skillspector",
+      "source_path": "skills/skill-inspector",
+      "provenance": "Apache-2.0 upstream package adapted at commit 4c52fbb83bbca0dd13f2685453c9b661d8c95bf8; local overlay requires no-LLM scanning and source-confirmed removal.",
+      "source_snapshot": "4c52fbb83bbca0dd13f2685453c9b661d8c95bf8"
+    },
+    {
+      "id": "universal-skill-audit",
+      "name": "Universal Skill Audit",
+      "category": "security",
+      "description": "Public-safe skill intake guidance for source provenance, Skillspector scanning, coverage review, source-level verdicts, and safe continuation when a scan blocks installation.",
+      "installed_name": "universal-skill-audit",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved first-party public-safe adaptation; excludes private runtime paths and machine-specific settings.",
+      "source_snapshot": null
+    },
+    {
+      "id": "gbrain-memory",
+      "name": "GBrain Memory",
+      "category": "memory-and-knowledge",
+      "description": "Applies one bounded, read-only GBrain recall before each prompt when a local or already-authorized connection is healthy; preserves provenance, treats records as evidence, keeps automatic capture and provider-backed operations off, and continues with existing memory when unavailable.",
+      "installed_name": "gbrain-memory",
+      "source_repository": "https://github.com/garrytan/gbrain",
+      "source_path": null,
+      "provenance": "Owner-requested, public-safe first-party adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; no local machine configuration.",
+      "source_snapshot": null
+    },
+    {
+      "id": "verify-fitlab",
+      "name": "FitLab Verification",
+      "category": "developer-workflows",
+      "description": "Project-local headed FitLab verification with synthetic data, one visible browser window, source-backed page coverage, privacy-safe screenshots and accessibility summaries, and scoped cleanup. The detailed feature map stays with the application.",
+      "installed_name": "verify-fitlab",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "Explicitly approved project-local catalog entry; redacted summary only, with no user data, local paths, or runtime configuration.",
+      "source_snapshot": null
+    }
   ]
 }
