@@ -827,6 +827,17 @@
       "source_path": null,
       "provenance": "Explicitly approved project-local catalog entry; redacted summary only, with no user data, local paths, or runtime configuration.",
       "source_snapshot": null
+    },
+    {
+      "id": "skill-authoring-best-practices",
+      "name": "Skill Authoring Best Practices",
+      "category": "planning-and-quality",
+      "description": "Reviews agent skills for concise entrypoints, direct reference links, contents lists in long references, procedural detail matched to risk, and unnecessary boilerplate.",
+      "installed_name": "skill-authoring-best-practices",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "Explicitly approved first-party package based on Anthropic's public skill-authoring guide; public-safe and does not reproduce source text.",
+      "source_snapshot": null
     }
   ]
 }

@@ -53,6 +53,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Agent-Managed CI/CD | Public-safe first-party release workflow with deployment patterns, health checks, rollback, and explicit release gates. Added 2026-10-17. |
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
 | Universal Skill Audit | Public-safe first-party guidance for skill-source provenance, mandatory Skillspector scans, complete coverage, and evidence-based install decisions. |
+| Skill Authoring Best Practices | Explicitly approved first-party review for concise skill bodies, direct reference links, Contents lists for long references, suitable procedural detail, and unnecessary boilerplate. Based on Anthropic's public guide. |
 | FitLab Verification | Explicitly approved project-local verification catalog entry. The catalog stores only a redacted summary; the detailed feature map stays with the application. Updated 2026-10-19. |
 
 ## Methodology
@@ -68,6 +69,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
+- 2026-11-04: Added the first-party Skill Authoring Best Practices package. It cites Anthropic's public guide without copying source text and keeps edits to candidate skills behind user authorization.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
