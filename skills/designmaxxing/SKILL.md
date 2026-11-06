@@ -53,9 +53,9 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Before settling on a new direction or major journey, review at least two relevant products, websites, component examples, or mockups where available. For every new website or page, website redesign, or new custom website-component design, check Awwwards first and include one relevant Awwwards example among the references. Record the URLs and the patterns to adapt. Public sites outside the approved asset list are reference-only and do not become asset sources. Recreate useful patterns in a distinct direction; do not copy complete screens, branding, or signature artwork.
 - Aim for polished, premium execution that feels unique to this product, audience, and platform. Do not reuse one visual template across different products by habit.
 - For websites, default to a distinctive, product-specific visual direction unless the user explicitly asks for a more conservative look. Distinctiveness must still fit the audience, content, brand, platform, accessibility needs, and performance budget.
-- Avoid polished-template defaults. The following are smell tests, not absolute bans. Keep a pattern when it serves the product, brand, content, platform, or user task. Use it minimally when it does not.
+- Avoid polished-template defaults. The following are smell tests, not absolute bans. Keep a pattern when the product, brand, content, accessibility, platform, or user request calls for it. Use it minimally when it does not.
 
-1. Harsh gradients: use strong gradients only when they support the brand, depth, or hierarchy.
+1. Harsh gradients and gradient backgrounds: use them when they support the brand, depth, or hierarchy without harming readability.
 2. Loose or mismatched icons: keep icon meanings, stroke, size, and optical alignment coherent. Reuse existing project or platform icon sets. For new icon assets, follow the approved source list. Do not draw or generate a new icon family.
 3. Pure white backgrounds: choose surfaces for the product and reading conditions. Use pure white when it fits.
 4. Rainbow coloring: use a limited, purposeful palette unless the information needs more.
@@ -85,6 +85,25 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 28. Hover animations: keep them brief and purposeful. Provide equivalent focus and touch feedback and respect reduced motion.
 29. Neon colors: avoid them as default accents. Use them for a fitting brand or clear status.
 30. Basic pastel colors: choose colors for the product, brand, contrast, and content instead of defaulting to a generic pastel palette.
+31. Tags and pills: use them for meaningful categories, filters, or status rather than decorating every label.
+32. Excessive italics: reserve italics for emphasis or convention and keep long passages easy to read.
+33. Instrument Serif: choose it for a fitting voice and content, not as a default visual shortcut.
+34. Negative kerning: avoid overly tight letter spacing that harms legibility, especially at small sizes.
+35. Over-the-top detailed UI: show detail that helps the task and remove ornamental complexity.
+36. Overusing dividers: use spacing and hierarchy where they group content clearly; add rules when needed.
+37. Color shades and opacities: limit arbitrary variations and maintain clear contrast and semantic meaning.
+38. Containers with borders: use borders to define useful boundaries, not around every element.
+39. Overly detailed diagrams: show the relationships needed for the audience and remove distracting detail.
+40. Verbose, redundant text: use concise copy and remove repeated explanations.
+41. Code breadcrumbs: show real navigation paths when useful, not code-like decoration.
+42. Section numbering: number sections when sequence or reference matters, not by default.
+43. Eyebrows: use short labels above headings when they add context, not as filler.
+44. Dithering: use the texture only when it supports the visual direction and preserves clarity.
+45. ASCII images: use text art only when it fits the product and remains accessible.
+46. Squiggles: use decorative marks sparingly when they support the composition.
+47. Excessive mono fonts: reserve monospaced type for suitable content or brand use and preserve readability.
+48. ALL CAPS subtitles: use capitalization deliberately and keep subtitles readable.
+49. Periods in titles: use punctuation when the voice or sentence structure calls for it, not as a default ornament.
 
 ## UI primitives and design systems
 
