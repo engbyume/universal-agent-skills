@@ -124,6 +124,30 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Use the current WCAG version as a technical reference for applicable web content. Automated checks alone do not establish accessibility or legal conformance.
 - Keep widgets consistent with their host theme and available space. Do not impose an unrelated style.
 
+## Premium-feeling interaction and finish cues
+
+Use these as optional quality cues, not a checklist. Choose details that improve responsiveness, confidence, recovery, accessibility, or craft for this product and platform.
+
+- **Optimistic updates:** show reversible changes promptly, then reconcile with the server. Provide a clear rollback or error state if the write fails, and do not present irreversible actions as complete before confirmation.
+- **Global search:** make `Cmd+K` open search across the product's content and actions from anywhere when the product has enough surface area. Use the platform equivalent elsewhere.
+- **Shortcut hints:** show keyboard shortcuts in menus and beside advanced actions. Keep those actions discoverable for touch and assistive-technology users too.
+- **Undo toasts:** offer a time-bounded undo action after reversible changes. Do not imply undo is available for irreversible actions.
+- **Stale-while-revalidate:** show cached content immediately and refresh it in the background when stale data is safe to display. Make freshness clear where it affects a decision.
+- **Pre-rendering:** prepare likely routes or views when it improves perceived speed without presenting stale or inaccurate content.
+- **Blurry placeholders:** use a lightweight blurred preview while an image loads, then resolve it cleanly without layout shift.
+- **View transitions:** use brief transitions between related screens when they clarify continuity. Respect reduced-motion preferences.
+- **Swipe to dismiss (mobile):** support the gesture for suitable sheets and cards, and keep a visible, accessible close action.
+- **Interruptible animations:** let users act again while motion is in progress when the task allows. Do not lock navigation behind decorative motion.
+- **Predictive back:** use the platform's preview-and-cancel back gesture where available, and keep navigation state consistent.
+- **Bigger tap targets:** give touch controls comfortable hit areas, especially for frequent or important actions.
+- **Safe-area insets:** keep content clear of notches and system gesture regions by using platform insets.
+- **One-time-code autofill:** support OS and browser code suggestions and paste without forcing one-digit fields.
+- **Tabular numbers:** use tabular numerals for prices, timers, scores, and other values that should align.
+- **Balanced headlines:** wrap short headings naturally to avoid an awkward final word when the type scale supports it.
+- **Smooth corners:** use consistent corner curves that fit the product. Do not round every surface by default.
+- **Idempotency keys:** use them for retryable actions with side effects, such as checkout or record creation, to prevent duplicate results.
+- **Amazon safe triangles:** honor safe-triangle areas defined by the current brief or asset template. Do not assume one universal Amazon safe zone or let it override the target image requirements.
+
 ## Release readiness
 
 Use the conditional checks in references/release-readiness.md when release context calls for them. Verify current official requirements for the target markets and platforms. Do not invent policies, business details, consent, reviews, or claims. A design review cannot guarantee legal compliance or prevent litigation. Refer material legal questions to qualified counsel. A direct user request authorizes the requested reversible implementation in the active project. This skill does not grant reuse rights to external assets or authorize paid services, account creation, publication, or production deployment.
