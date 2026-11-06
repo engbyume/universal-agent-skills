@@ -24,13 +24,13 @@ Apply this baseline to every website intended for public release unless the user
 
 ## Optional website enhancements
 
-Use these ideas when they solve a real user need. Do not add them as a checklist. First check the site's purpose, content, audience, platform, accessibility, privacy, and implementation constraints. Prefer native platform behavior and the smallest interaction that works.
+Strongly consider these ideas in context, and use them when they solve a real user need. They are not a mandatory feature checklist. First check the site's purpose, content, audience, platform, accessibility, privacy, and implementation constraints. Prefer native platform behavior and the smallest interaction that works.
 
 | Feature | Use when | Design safeguards |
 |---|---|---|
 | Dark mode toggle | The audience benefits from a choice of light and dark themes. | Respect the system preference, keep both themes readable, and remember the user's choice only when appropriate. |
 | Cookie banner | The site uses cookies or similar storage that requires notice or consent. | Keep the notice concise, offer clear required choices, link to details, and avoid dark patterns. Do not show it as decoration. |
-| Site search | Users need to find content across a collection or a large site. | Define what search covers and provide useful empty, loading, error, and no-results states. |
+| Site search | Users need to find content across a collection or a large site. Smart suggestions or typo tolerance may help when the content warrants them. | Define what search covers, label the input and suggestions, support keyboard use, and provide useful empty, loading, error, and no-results states. Protect sensitive queries and avoid unnecessary tracking. |
 | Back-to-top button | A long page makes returning to the top slow. | Keep it out of the way, label it for assistive technology, and make it keyboard accessible. |
 | Mobile menu | The full navigation does not fit the small-screen layout. | Provide a clear open and close action, manage focus, support Escape, and keep touch targets usable. |
 | Loading animation | An action takes long enough that users need feedback. | Show a truthful status or progress value. Keep motion brief and respect reduced-motion settings. |
@@ -42,11 +42,23 @@ Use these ideas when they solve a real user need. Do not add them as a checklist
 | Skip-to-content link | A page repeats navigation before its main content. | Make it the first keyboard stop and reveal it clearly on focus. |
 | Password visibility toggle | A form contains a password field and users may need to check their entry. | Use a labeled button, expose its state, and keep the input's password semantics intact. |
 | UTM tracking | Campaign attribution is an approved product requirement. | Do not add tracking by default. Avoid sensitive values, respect consent and privacy controls, and prevent parameters from breaking navigation. |
-| Form success state | The server confirms that a form submission succeeded. | State what happened and the next step. Do not report success before confirmation. |
+| Form success state or notification | The server confirms that a form submission succeeded. | State what happened and the next step. Announce feedback accessibly without obscuring it or removing it too quickly. Do not report success before confirmation. |
 | Form error state | Validation or submission fails. | Explain the problem in plain language, preserve entered values where safe, and offer a useful correction. Do not use color alone. |
 | Confirmation dialog or modal | An action is destructive, costly, or hard to undo. | Do not interrupt routine actions. Explain the consequence, provide a clear cancel path, and manage focus accessibly. |
 | Last-updated date | Content changes over time and freshness affects trust or decisions. | Use the actual content date and a clear locale or timezone where timing matters. Omit it on stable pages. |
-| Expandable FAQ | A set of secondary answers can stay out of the way until requested. | Use accessible disclosure controls, descriptive labels, and a clear expanded state. Keep essential information visible. |
+| Expandable or searchable FAQ | A set of secondary answers can stay out of the way until requested, or a large FAQ benefits from search. | Use accessible disclosure controls, descriptive labels, and a clear expanded state. Label search and provide a no-results state. Keep essential information visible. |
+| Language switcher | The site supports content in more than one language. | Identify languages clearly, make the control keyboard accessible, set the page language correctly, and preserve the user's choice only when appropriate. Do not imply untranslated content is translated. |
+| Save for later | Users benefit from returning to selected items. | Explain where items are stored and for how long; allow removal and avoid storing sensitive items without an appropriate privacy and security design. |
+| Recently viewed indicator | Returning to prior items helps users navigate a collection. | Allow users to clear or disable the history, limit retention, and avoid exposing sensitive browsing on shared devices. |
+| Keyboard shortcuts | Frequent actions benefit from faster keyboard access. | Make shortcuts discoverable, avoid conflicts with browser and assistive technology commands, and provide ordinary controls as an alternative. |
+| Adjustable text size | An audience needs an in-page text size choice beyond browser controls. | Preserve browser zoom and reflow, label controls, maintain readable layouts, and remember a preference only when appropriate. |
+| Interactive tables | Users need to explore tabular data. | Preserve semantic table structure, keyboard access, clear headers and state, and usable display at narrow widths and zoom. |
+| Autosave forms | A long form makes losing progress costly. | Explain save status, retention, and how to discard a draft. Avoid storing sensitive data without an appropriate security and privacy design; do not imply submission. |
+| Share buttons | Sharing specific content supports the user's task. | Share only after an explicit action, use a clear accessible label, and avoid loading third-party trackers or exposing private data without consent. |
+| Estimated reading time | Readers benefit from judging the length of substantial content. | Label the value as an estimate and use a reasonable method based on the actual content. |
+| Filter and sort | Users need to narrow or order a sizeable collection. | Label controls and current state, support keyboard use, provide a reset and no-results state, and do not rely on color alone. |
+| Table of contents | A long structured page benefits from section navigation. | Use meaningful headings and accessible links, preserve focus and anchor visibility, and keep it usable at small sizes. |
+| Offline access | Users need access during unreliable or unavailable connectivity. | Explain what is available and when it was last updated; handle stale content and sync failures. Avoid caching sensitive data without an appropriate security and privacy design, and provide a way to clear stored data. |
 | Floating contact button | Contact is a primary action for this page or service. | Keep it from covering content or controls, especially on mobile, and provide a descriptive accessible name. |
 
 Some features become baseline when their matching interface exists. Forms need clear success and error feedback. Pages with repeated navigation need a skip link. Cookie notices and tracking depend on the actual storage and privacy requirements. Add only the relevant behavior.

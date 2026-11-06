@@ -8,6 +8,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | --- | --- |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
+| [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | User-requested cross-platform desktop automation skill, reviewed at the Apache-2.0 v1.2.0 release commit `2b0a7334fc111730454b726e6800aa41cdafc093`; the third-party skill body is not copied into this catalog. |
 | [browser-use/browser-use](https://github.com/browser-use/browser-use) | Present in the skills lockfile and used for browser automation workflows. |
 | [anthropics/skills](https://github.com/anthropics/skills) | Installed Git repository containing general-purpose document, design, planning, and developer skills. |
 | [robabby/claude-skills](https://github.com/robabby/claude-skills) | Installed Git repository containing memory, workflow, coding, testing, and quality skills, including the YAML-frontmatter memory architecture documented in this catalog. |
@@ -31,8 +32,14 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
 | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. Added 2026-10-14 after public-safety review. |
-| [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | Apache-2.0 source pinned at commit `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`; includes the skill-inspector package for mandatory no-LLM scanning and source-level review. Added 2026-10-15. |
+| [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | Apache-2.0 scanner source updated to verified main commit `3fb77b4cc9a97724481a6745157efcbfb20e2f32`; focused parser and reference-resolution regression tests passed. The cataloged skill-inspector adaptation remains sourced from commit `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`. |
 | [garrytan/gbrain](https://github.com/garrytan/gbrain) | Owner-requested, redacted local-first memory adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; it does not enable automatic capture, provider calls, or machine-specific configuration. |
+
+## Referenced tools
+
+| Repository | Use in this catalog |
+| --- | --- |
+| [beenuar/AiSOC](https://github.com/beenuar/AiSOC) | Referenced by Securitymaxxing for a mandatory applicability check on operational SOC telemetry and incident work. Current main was reviewed at `010a3981bfc791266d62aaa31531f05798531efd`; no product code, telemetry, credentials, or deployment configuration is copied here. |
 
 ## Explicitly approved local entries
 

@@ -1,5 +1,22 @@
 # Expanded design review checklist
 
+## Contents
+
+- Scope and use
+- User needs and evidence
+- Contextual interaction principles
+- Information structure and content
+- Semantics and custom interactions
+- Web accessibility details
+- Target size and input methods
+- Adaptive layouts and localization
+- Games, media, and spatial interfaces
+- Permissions, privacy, and human-AI interaction
+- Design systems and shared components
+- Web performance and resilience
+- Evaluation and reporting
+- Research sources
+
 ## Scope and use
 
 Use this reference for substantial design reviews, new user journeys, cross-platform interfaces, game or spatial interfaces, and AI interactions. It expands the designmaxxing baseline. It does not replace the Apple craft review, UX-principle notes, optional website features, or release-readiness checks. Read the sections that fit the product. A checklist does not prove usability or accessibility.

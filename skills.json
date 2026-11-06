@@ -730,10 +730,32 @@
       "source_snapshot": null
     },
     {
+      "id": "agent-desktop",
+      "name": "Agent Desktop",
+      "category": "developer-workflows",
+      "description": "Cross-platform desktop GUI automation through native accessibility trees, with observe-act-verify workflows, qualified element references, and screenshot capture.",
+      "installed_name": "agent-desktop",
+      "source_repository": "https://github.com/vercel-labs/agent-desktop",
+      "source_path": "skills/agent-desktop",
+      "provenance": "User-requested Apache-2.0 upstream skill audited at the v1.2.0 release commit; active local copy has portable documentation fixes and is not mirrored here.",
+      "source_snapshot": "2b0a7334fc111730454b726e6800aa41cdafc093"
+    },
+    {
+      "id": "agent-desktop-macos",
+      "name": "Agent Desktop for macOS",
+      "category": "developer-workflows",
+      "description": "macOS guide for Agent Desktop permissions, accessibility surfaces, headed actions, and recovery.",
+      "installed_name": "agent-desktop-macos",
+      "source_repository": "https://github.com/vercel-labs/agent-desktop",
+      "source_path": "skills/agent-desktop-macos",
+      "provenance": "User-requested Apache-2.0 upstream skill audited at the v1.2.0 release commit; active local copy has portable documentation fixes and is not mirrored here.",
+      "source_snapshot": "2b0a7334fc111730454b726e6800aa41cdafc093"
+    },
+    {
       "id": "designmaxxing",
       "name": "Designmaxxing",
       "category": "creative-and-visual-work",
-      "description": "Portable UI design guidance for websites, apps, games, widgets, and design systems, including public-product goal discovery, service recommendations, direct implementation, shadcn/Base UI setup, real-time push UX, accessibility, Computer Use by default for Codex UI inspection and interaction checks, approved asset sourcing, distinctive-by-default website design, Awwwards inspiration research, and research-before-mockup guidance.",
+      "description": "Portable UI design guidance for websites, apps, games, widgets, and design systems, including Agent Desktop as the mandatory first computer-use route with screenshot-based fallback, Awwwards MCP research, design-slop avoidance, contextual premium interaction cues, approved asset sourcing, and distinctive-by-default website design.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,
@@ -755,7 +777,7 @@
       "id": "securitymaxxing",
       "name": "Securitymaxxing",
       "category": "security",
-      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 23 conditional platform and lifecycle checks, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack plus Appify/Firecrawl research guidance.",
+      "description": "Portable application-security guidance for websites, apps, games, APIs, AI features, and related software. It includes 70 core checks, 23 conditional checks, a mandatory AiSOC applicability check for operational SOC work, pre-build and post-build review guidance, authorized testing boundaries, and preferred web stack research.",
       "installed_name": "securitymaxxing",
       "source_repository": null,
       "source_path": null,
