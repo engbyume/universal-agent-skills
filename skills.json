@@ -12,8 +12,7 @@
       "Private files, credentials, environment files, and machine paths"
     ],
     "explicit_exceptions": [
-      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration.",
-      "progressive-codex-model-router: owner-approved public-safe first-party adaptation focused on Codex subagent routing; excludes private paths, prompts, and machine-specific configuration."
+      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration."
     ]
   },
   "skills": [
@@ -451,10 +450,10 @@
       "category": "agent-efficiency",
       "description": "Coordinates Codex work as a foreman and routes delegated subagents to the lowest-cost capable model and effort per task. Keeps the parent on GPT-6 Luna / max and aggregates child results. Designed to stretch included Codex usage for Plus users.",
       "installed_name": "progressive-codex-model-router",
-      "source_repository": null,
+      "source_repository": "https://github.com/engbyume/progressive-codex-model-router",
       "source_path": null,
-      "provenance": "explicitly approved public-safe first-party adaptation; excludes private paths, prompts, and machine-specific settings",
-      "source_snapshot": null
+      "provenance": "Owner-published standalone public-safe Codex skill; source is at the repository root.",
+      "source_snapshot": "e2c0ceec91e8d882b4ced0b90b34f50ae2903f2b"
     },
     {
       "id": "yaml-wiki-framework",

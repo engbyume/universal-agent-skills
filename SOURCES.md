@@ -2,10 +2,11 @@
 
 This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-12.
 
-## Included upstream repositories
+## Included repositories
 
 | Repository | Why it is included |
 | --- | --- |
+| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | User-requested cross-platform desktop automation skill, reviewed at the Apache-2.0 v1.2.0 release commit `2b0a7334fc111730454b726e6800aa41cdafc093`; the third-party skill body is not copied into this catalog. |
@@ -20,7 +21,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Installed context tools with bounded raw-CLI and retry-safe modes plus a writable native fallback for MCP failures (2026-09-29). |
 | [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; cataloged for risk-gated role routing, cost-aware selection, and parent-owned verification. The local routing overlay uses Luna / Max by default, Sol / High for hard work, and Astra / High for very complex short work; it does not change upstream. |
-| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | Upstream source for the former local Sol Foreman workflow; its license is retained. This catalog publishes the owner-approved Progressive Codex Model Router adaptation as a separate redacted first-party package. Upstream remains unchanged. |
+| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | Upstream source for the former local Sol Foreman workflow; its license is retained. The owner-published Progressive Codex Model Router adaptation lives in its own public repository, which this catalog links to. Upstream remains unchanged. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. A local writing adapter combines structure-aware narrative and professional-prose routes with conditional surface-style and formatting checks plus evidence-gated model guidance; upstream unchanged. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |
@@ -61,7 +62,6 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
 | Universal Skill Audit | Public-safe first-party guidance for skill-source provenance, mandatory Skillspector scans, complete coverage, and evidence-based install decisions. |
 | FitLab Verification | Explicitly approved project-local verification catalog entry. The catalog stores only a redacted summary; the detailed feature map stays with the application. Updated 2026-10-19. |
-| Progressive Codex Model Router | Explicitly approved public-safe first-party adaptation of a foreman workflow. It keeps the parent on GPT-6 Luna / max, routes Codex subagents by task and cost, and aggregates their results. It contains no private paths or runtime settings. |
 
 ## Methodology
 
@@ -77,13 +77,13 @@ General agent capabilities such as browser automation, context compression, grap
 ## Provenance notes
 
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
-- 2026-11-09: Added the owner-approved Progressive Codex Model Router package with child-only model routing, task-class routes, and Plus usage guidance. The public package is self-contained and excludes local orchestration helpers.
+- 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
 - 2026-10-12: Added a portable autonomy and hook-free fallback check for active skills, including routine authorized work, genuine action boundaries, and complete inventory audits.
 
-- Repository links are upstream links, not copies or forks created by this catalog.
+- Repository links identify source repositories. This catalog links to those sources and does not imply that it created a copy or fork.
 - On September 28, 2026, redacted local agent instructions were clarified to separate
   user authorization from goal-state evidence, avoid repeated continuation prompts,
   checkpoint at first-compaction thresholds, and avoid guessing active model identity.
