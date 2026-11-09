@@ -53,7 +53,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Agent Mentor | Explicitly approved local skill for authority, scope, and runtime evidence checks. |
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
-| Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation. |
+| Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation, with a parent-owned final review through Progressive Codex Model Router after standard capacity returns. Existing review state values are preserved for compatibility. |
 | Designmaxxing | First-party portable UI design skill for public-product goal discovery, direct implementation, Computer Use by default for Codex UI review and interaction testing, shadcn/Base UI design systems, push-based live UX, accessibility, approved asset sourcing, unique-by-default website design, mandatory Awwwards (https://www.awwwards.com/) inspiration research, and conditional Platform Architecture routing. Updated 2026-10-18. |
 | Securitymaxxing | First-party portable application-security skill with 70 core checks and 23 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack plus Appify/Firecrawl research guidance. Updated 2026-10-17. |
 | Platform Architecture | First-party conditional guidance for backend, distributed systems, push-based realtime updates, data consistency, delivery, observability, recovery, and public-product service selection; routes detailed work to existing specialists. Added 2026-10-17. |
@@ -76,6 +76,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
+- 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Added the owner-approved Progressive Codex Model Router package with child-only model routing, task-class routes, and Plus usage guidance. The public package is self-contained and excludes local orchestration helpers.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 

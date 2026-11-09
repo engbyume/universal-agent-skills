@@ -668,7 +668,7 @@
       "id": "usage-limit-resume",
       "name": "Usage Limit Resume",
       "category": "agent-efficiency",
-      "description": "Captures reset state and resumes blocked work with verified checkpoints, standard-lane priority, reserve safety gates, and cross-chat continuation carry-forward without repeated approval prompts.",
+      "description": "Captures reset state and resumes blocked work with verified checkpoints, standard-lane priority, reserve safety gates, and cross-chat continuation carry-forward without repeated approval prompts. After standard capacity returns, it routes the parent-owned final review through Progressive Codex Model Router while preserving existing review state values.",
       "installed_name": "usage-limit-resume",
       "source_repository": null,
       "source_path": null,
