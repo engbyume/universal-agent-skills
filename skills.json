@@ -12,7 +12,8 @@
       "Private files, credentials, environment files, and machine paths"
     ],
     "explicit_exceptions": [
-      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration."
+      "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration.",
+      "progressive-codex-model-router: owner-approved public-safe first-party adaptation focused on Codex subagent routing; excludes private paths, prompts, and machine-specific configuration."
     ]
   },
   "skills": [
@@ -445,15 +446,15 @@
       "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
     },
     {
-      "id": "sol-foreman",
-      "name": "Sol Foreman",
+      "id": "progressive-codex-model-router",
+      "name": "Progressive Codex Model Router",
       "category": "agent-efficiency",
-      "description": "Coordinates bounded delegated work, routes regular tasks to GPT-6 Luna / Max, hard tasks to GPT-6.1 Sol / High, and very complex short tasks to GPT-6 Astra / High, with same-child repairs, direct-only Luna Reserve, host-native non-GPT delegation, verified active-model evidence, cross-chat goal handoffs, and evidence-backed acceptance.",
-      "installed_name": "sol-foreman",
-      "source_repository": "https://github.com/olsenbrands/sol-foreman",
-      "source_path": "skills/sol-foreman",
-      "provenance": "universal source audit and active shared copy",
-      "source_snapshot": "25b5f143e5e04b0ed54c36be99c48ceb1d783a33"
+      "description": "Coordinates Codex work as a foreman and routes delegated subagents to the lowest-cost capable model and effort per task. Keeps the parent on GPT-6 Luna / max and aggregates child results. Designed to stretch included Codex usage for Plus users.",
+      "installed_name": "progressive-codex-model-router",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "explicitly approved public-safe first-party adaptation; excludes private paths, prompts, and machine-specific settings",
+      "source_snapshot": null
     },
     {
       "id": "yaml-wiki-framework",
