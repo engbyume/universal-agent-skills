@@ -1,0 +1,4 @@
+interface:
+  display_name: "Background Skill Fixer"
+  short_description: "Repairs failed skills in isolated background work"
+  default_prompt: "Use $background-skill-fixer after a skill fails and its fallback takes over, so a separate agent can fix the root cause."

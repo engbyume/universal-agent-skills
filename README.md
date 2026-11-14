@@ -1,30 +1,34 @@
 # Jeremy's Agent Skills
 
-A personal catalog of AI-agent skills that were installed from public GitHub repositories.
+A personal catalog of AI-agent skills, with a small set of explicitly approved first-party skill packages.
 
-This repository is a **catalog, not a mirror**. It contains short descriptions, categories, provenance notes, and links back to the original repositories. It does not copy third-party skill instructions, bundled scripts, private prompts, credentials, environment files, or local configuration.
+This repository is a catalog plus a small set of explicitly approved first-party skill packages. It does not mirror third-party skill instructions. Catalog entries contain short descriptions, categories, provenance notes, and links to upstream repositories. First-party packages contain portable, redacted guidance. The repository excludes private prompts, credentials, environment files, and local configuration.
 
 ## What is included
 
-A skill is included only when its source can be traced to a public GitHub repository through one or more of:
+Catalog entries for upstream skills are included only when their source can be traced to a public GitHub repository through one or more of:
 
 - a Git remote on the installed source repository
 - the local skills lockfile
 - an explicit repository or installation link in the skill's own metadata
 
-The catalog includes task-oriented skills that are useful across agent runtimes, such as memory workflows, context efficiency, planning, research, writing, design, documents, security, and verification.
+First-party skill packages may be published only with explicit owner approval and a public-safety review. They must not contain private paths, personal data, raw prompts, credentials, or local runtime configuration.
+
+The catalog includes task-oriented skills that are useful across agent runtimes, such as memory workflows, context efficiency, planning, research, writing, design, documents, security, and verification. First-party skills appear as redacted entries; a package is included only with explicit owner approval.
 
 ## What is intentionally excluded
 
 The catalog does not include:
 
 - Aside skills or other bundled platform skills
-- Skills with no verifiable GitHub source
-- Local-only skills and Jeremy-specific private operating instructions
-- Vendor or service integration skills that are tied to a single product or hosted tool
+- Third-party skills with no verifiable GitHub source
+- Unapproved local-only skills and user-specific private operating instructions
+- Vendor or service integration skills tied to a single product or hosted tool, unless explicitly owner-approved as a narrow, public-safe first-party adapter
 - Private files, `.env` files, API keys, cookies, prompts, or machine-specific paths
 
 The exclusion policy is deliberately conservative. A repository may be public and still be left out if the installed skill is primarily a wrapper for a particular service or local runtime.
+
+The owner-approved exception is gbrain-memory, a redacted local-first memory adapter requested as a mandatory cross-agent route. It uses bounded read-only recall, keeps automatic capture and provider calls off, and continues with existing memory when GBrain is unavailable. It contains no machine-specific configuration.
 
 ## Categories
 
@@ -43,8 +47,10 @@ The exclusion policy is deliberately conservative. A repository may be public an
 
 - [`skills.json`](skills.json): machine-readable catalog
 - [`SOURCES.md`](SOURCES.md): source repositories and provenance notes
+- [`skills/`](skills/): explicitly approved, redacted first-party skill packages
 - [`frameworks/yaml-wiki-framework.md`](frameworks/yaml-wiki-framework.md): user and agent guide with a copyable prompt
 - [`frameworks/yaml-wiki-framework.yaml`](frameworks/yaml-wiki-framework.yaml): machine-readable framework contract
+- [`frameworks/skill-autonomy-compatibility.md`](frameworks/skill-autonomy-compatibility.md): routine autonomy, genuine action boundaries, and hook-free skill checks
 
 ### YAML Wiki Framework
 
@@ -52,7 +58,7 @@ The catalog includes a descriptive YAML Wiki Framework based on the public `roba
 
 ## Updating the catalog
 
-When adding a skill, verify the original GitHub repository first. Add a concise description, a category, the installed skill name, and a source link. Do not copy the skill's implementation into this repository.
+When adding a public-source skill, verify the original GitHub repository first and link to it rather than copying its instructions. An explicitly approved first-party skill may include a portable, redacted package. Add a concise catalog entry and category, and do not claim an external upstream source. Exclude private prompts, personal data, credentials, machine paths, and local configuration.
 
 ## Attribution
 
