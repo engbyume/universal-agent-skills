@@ -2,6 +2,12 @@
 
 Apply these defaults when a new web product has no established stack. Existing project choices, current user direction, platform requirements, accessibility, and measured needs take precedence. Do not migrate an existing product only to match this list.
 
+## Research-first provider selection
+
+- For every planned service or data category, compare maintained components, platform capabilities, and managed providers before selection. Use current official feature, security, and pricing documentation.
+- Record fit against workload, data sensitivity, access boundaries, operating effort, compatibility, cost, and licensing. Reuse a scoped catalog default when it fits; do not treat a vendor example as a universal recommendation.
+- Prefer supported security controls over custom authentication, cryptography, password-storage, or key-management code. Keep the current project stack and data boundary unless the user changes them.
+
 ## Front end
 
 - Prefer React with TypeScript for new web front ends. Use JavaScript where the project or integration calls for it.

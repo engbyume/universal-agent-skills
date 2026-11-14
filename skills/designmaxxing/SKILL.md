@@ -44,6 +44,14 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - For substantial design reviews, new journeys, or cross-platform experiences, read references/design-review-checklist.md and apply only the sections that fit. For small targeted edits, use only matching prompts. The checklist does not replace user research or accessibility testing.
 - Securitymaxxing is the mandatory security baseline for software work. Keep its checks and tests in that skill; apply designmaxxing recommendations contextually.
 
+## Research-first implementation
+
+- Before implementing a UI, journey, design system, or product feature, break the request into each planned capability, interaction, integration, and asset. Research existing products, platform APIs, maintained components, design systems, and licensed assets for every planned part.
+- Record a plan matrix with the problem, candidate solutions, sources, fit, accessibility, privacy and security, license, cost, and the choice to reuse or build custom. Do not begin implementation with gaps in the planned feature research.
+- Consult the living problem-solution catalog when available. Reuse defaults within their stated scope, record actual project use and outcome, and add new categories. Treat user examples as candidates until research selects them.
+- For a named product reference, review current official materials and normal user-visible behavior. Use reverse-engineer-anything when shipped behavior is important and permitted. Do not bypass access controls or terms or copy protected code, brand identity, or assets.
+- Search current project and user-provided assets before any production asset decision. Follow references/design-asset-sources.md for approved sources and reuse rights.
+
 ## Choose a visual direction
 
 - Choose typography, icons, color, density, surface, corner shape, motion, and layout to fit the brief, brand, platform, content, accessibility needs, and existing components.

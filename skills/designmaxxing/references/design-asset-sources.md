@@ -39,6 +39,12 @@ The approved source set consists of user-provided project assets, an existing us
 
 ## Research before design
 
+### Research matrix and solution reuse
+
+- Before any mockup or implementation, map every planned capability, component, and asset to existing solutions. Record the problem, candidates, source, fit, reuse rights, and the decision to reuse or build custom.
+- Check the living problem-solution catalog when available. Reuse scoped defaults without repeating broad discovery; log use and outcome, add new categories, and keep project-specific choices separate.
+- Build or create custom only when research shows that no compatible approved option meets the brief or the user explicitly asks for original work.
+
 - For every new app, site, game, or major UI direction, inspect at least two relevant products, websites, components, or mockups when available. Use the curated galleries as quick discovery sources. For a new website or page, website redesign, or new custom website-component design, include an Awwwards MCP example when permitted, as described above. If the curated sources do not provide enough examples, public web research may find comparable products for reference only.
 - Record the MCP query and site title or slug for an Awwwards reference, and URLs for other references. Record the relevant interaction or visual pattern and how the design will adapt it to the current audience, brand, platform, content, accessibility needs, and design system.
 - Recreate the useful interaction or information pattern, not the complete screen, product identity, logo, or signature artwork. A reference is evidence for design decisions, not permission to copy.

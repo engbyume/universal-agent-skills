@@ -80,6 +80,7 @@ General agent capabilities such as browser automation, context compression, grap
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to skills/background-skill-fixer.
+- 2026-11-14: Strengthened Designmaxxing, Securitymaxxing, and Platform Architecture with research-first capability planning, evidence-based reuse, current source checks, and justified custom implementation.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.

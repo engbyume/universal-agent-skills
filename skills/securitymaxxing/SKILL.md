@@ -34,6 +34,14 @@ Use this skill for application-security review. It is separate from visual and i
 
 Apply the active project instructions and the user's current request. This skill guides risk review; it does not authorize implementation, dynamic testing, account access, production mutations, deployment, offensive testing, publication, or other side effects.
 
+## Research-first security solution selection
+
+- Before implementation, map every planned feature to its data and trust boundaries, then research existing platform controls, maintained libraries, provider services, and standards for each applicable risk.
+- Use current official provider documentation, security advisories, and primary security guidance. Compare viable approaches against the actual threat model, data sensitivity, compatibility, permissions, operating burden, license, and cost. Compare multiple options when the choice is material.
+- Prefer maintained identity, session, password-storage, secret-management, database, payment, and security controls when they fit. Do not invent cryptography or password hashing. Justify any custom security-sensitive control when existing maintained options do not fit.
+- Consult the living problem-solution catalog when available. Reuse a scoped, evidence-backed default when it fits; do not infer a default from a user example or provider brand. Record project-specific decisions and add new reusable categories only when evidence supports them.
+- For a named product reference, use reverse-engineer-anything only for authorized targets and permitted methods. Do not bypass access controls, terms, or security boundaries.
+
 ## Before building or changing software
 
 1. Identify the product, target platform, architecture, deployment model, audience, and applicable threat model. Read references/stack-preferences.md when choosing technologies or hosting for new web work. Distinguish websites, APIs, native apps, games, browser clients, backend services, AI features, and third-party integrations. Preserve an established stack unless the user requests a change or evidence shows it does not fit.

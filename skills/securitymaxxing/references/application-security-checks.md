@@ -4,6 +4,8 @@ This reference adds a security pass to implementation work for websites, apps, a
 
 ## Before building
 
+Before selecting a control or writing custom security code, research existing platform features, maintained libraries, and provider-supported controls for each applicable risk. Use current primary security guidance and official provider documentation. Record fit against the threat model and how the chosen control will be verified. Prefer maintained options that meet the project requirements; never invent cryptography or password hashing.
+
 Use the active `security-review` skill. Identify sensitive data and secret paths, trust boundaries, authentication, authorization, sessions, browser origins, password recovery, uploads, file paths, outbound URL fetching, API and webhook endpoints, payments, database roles, cloud configuration, deployment environments, source maps, package sources, audit and monitoring needs, backups, encryption boundaries, tenant boundaries, code review, object-property binding, process execution, deserialization, OAuth flows, and AI prompts and tools. Turn applicable checks into concrete controls and tests before implementation. Do not treat a missing feature as a finding without considering the product, threat model, and applicable policy.
 
 | # | Check | Security review guidance |

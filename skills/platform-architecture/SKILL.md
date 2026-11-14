@@ -20,6 +20,12 @@ Use this skill to choose architecture patterns that solve measured product needs
 - Compare current official provider features and pricing. RDS, ECR, ECS, a load balancer, and Amplify are options, not automatic requirements. Tell the user before a first cloud login is needed. Do not create paid resources without approval for the specific scope and cost.
 - Appify is preferred for general scraping or downloads when available. Use Firecrawl for known-URL extraction or multi-page crawls. These are research tools, not runtime services.
 
+## Research and reuse before architecture choices
+
+- Break each architecture request into capabilities and constraints before choosing services. Research the active project, maintained libraries, provider-managed options, platform APIs, and established patterns for every planned component.
+- Use current official documentation, security guidance, and pricing. Compare options against workload, data boundaries, availability, recovery, operating effort, compatibility, licensing, and total cost. Reuse a scoped catalog default when it fits and record project-specific exceptions.
+- Prefer a managed or maintained solution when it meets the requirement. Build or operate custom infrastructure only when research shows no compatible option fits or the user asks for it. Record evidence and the reason for the decision in the plan and catalog.
+
 ## Request paths, caching, and protocols
 
 - Use a reverse proxy for traffic forwarding and edge policy. Use a load balancer to distribute requests across healthy instances. Use an API gateway when shared routing, authentication, quotas, or API policy are needed. Keep business logic in the application.
