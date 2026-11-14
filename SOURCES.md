@@ -33,7 +33,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Official Rust Token Killer source built and installed as a command-output optimizer; bundled agent skills were not installed. |
 
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
-| [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. Added 2026-10-14 after public-safety review. |
+| [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. The adaptation now checks goal continuity through retries and fallback. Added 2026-10-14 after public-safety review. |
 | [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | Apache-2.0 scanner source updated to verified main commit `3fb77b4cc9a97724481a6745157efcbfb20e2f32`; focused parser and reference-resolution regression tests passed. The cataloged skill-inspector adaptation remains sourced from commit `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`. |
 | [garrytan/gbrain](https://github.com/garrytan/gbrain) | Owner-requested, redacted local-first memory adapter based on upstream commit 44eb0493ff2776f04d6616b1a526657702f7544a; it does not enable automatic capture, provider calls, or machine-specific configuration. |
 
@@ -49,15 +49,15 @@ These entries have no claimed upstream repository. The descriptions are public-s
 
 | Skill | Why it is included |
 | --- | --- |
-| Codex Usage Fallback Router | Explicitly approved local skill for usage checks, approved free-model fallbacks, and a local model switcher. |
-| Eval Loop | Explicitly approved local skill for bounded verification after changes. |
-| Autonomous Skill Routing | Explicitly approved local skill for compact index-based skill discovery. |
+| Codex Usage Fallback Router | Explicitly approved local skill for quota checks and automatic use of an existing preapproved free fallback when task data is permitted. Low quota alone does not stop the goal. |
+| Eval Loop | Explicitly approved local skill for bounded verification. A retry limit ends the current approach, not the goal; replan and keep safe work moving. |
+| Autonomous Skill Routing | Explicitly approved local skill for compact skill discovery, safe defaults, and keeping the same goal active through failures and fallbacks. |
 | Agent Mentor | Explicitly approved local skill for authority, scope, and runtime evidence checks. |
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
-| Usage Limit Resume | Explicitly approved local skill for bounded reset capture and continuation, with a parent-owned final review through Progressive Codex Model Router after standard capacity returns. Existing review state values are preserved for compatibility. |
+| Usage Limit Resume | Explicitly approved local skill for passive reset checkpoints after no permitted route remains. It preserves reserve and final-review safeguards and does not create a task-specific automation. |
 | Designmaxxing | First-party portable UI design skill for public-product goal discovery, direct implementation, Computer Use by default for Codex UI review and interaction testing, shadcn/Base UI design systems, push-based live UX, accessibility, approved asset sourcing, unique-by-default website design, mandatory Awwwards (https://www.awwwards.com/) inspiration research, and conditional Platform Architecture routing. Updated 2026-10-18. |
-| Securitymaxxing | First-party portable application-security skill with 70 core checks and 23 conditional platform and lifecycle checks, pre-build and post-build guidance, authorized testing limits, and preferred web stack plus Appify/Firecrawl research guidance. Updated 2026-10-17. |
+| Securitymaxxing | First-party application-security skill with 70 core and 23 conditional checks, research-first reuse guidance, autonomous authorized local review, and real access, production, and security-scope gates. Updated 2026-11-14. |
 | Platform Architecture | First-party conditional guidance for backend, distributed systems, push-based realtime updates, data consistency, delivery, observability, recovery, and public-product service selection; routes detailed work to existing specialists. Added 2026-10-17. |
 | Agent-Managed CI/CD | Public-safe first-party release workflow with deployment patterns, health checks, rollback, and explicit release gates. Added 2026-10-17. |
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
@@ -81,6 +81,7 @@ General agent capabilities such as browser automation, context compression, grap
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to skills/background-skill-fixer.
 - 2026-11-14: Strengthened Designmaxxing, Securitymaxxing, and Platform Architecture with research-first capability planning, evidence-based reuse, current source checks, and justified custom implementation.
+- 2026-11-14: Updated the public autonomy compatibility guidance and catalog summaries to keep authorized work moving through safe fallbacks, without ending goals on a failed approach or low weekly quota.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.

@@ -2,6 +2,12 @@
 
 Use this check for active skills across supported agent runtimes. A skill should let an agent complete ordinary work that the user has already authorized while keeping real authorization and safety boundaries intact.
 
+## Goal continuity
+
+- A retry or correction budget ends the current method, not the user objective. Replan and continue the same task through a safe fallback.
+- Keep the goal and verified checkpoint active while one action waits on a real authority gate. Continue safe independent work.
+- Do not mark the task blocked or complete only because a tool, helper, or worker failed. Use blocked only when no safe, authorized path remains.
+
 ## Routine-work scenario
 
 Give the skill a clear, reversible task within the user's stated scope. It passes when the agent:

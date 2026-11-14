@@ -49,6 +49,8 @@ Use the active runtime's approved memory and after-task protocol. Do not copy ra
 
 ## Autonomy and safety
 
+A failed approach or exhausted retry budget does not end the user's objective. Replan, keep the same goal and checkpoint active, and continue safe independent work. Mark work blocked only when no safe, authorized route remains. Do not create a task-specific automation to track a failure or wait for a milestone.
+
 A routine skill path must complete clearly authorized, reversible work without repeat approval, forced waiting, or a required optional tool. If it blocks that work, correct the active user-owned copy when authorized. If it cannot be corrected safely, disable only the incompatible route when a safe equivalent preserves the real boundary. Otherwise keep only the actual gate and continue safe work.
 
 Never remove a real consent, access, cost, external-action, production, security-scope, or destructive-action boundary. A skill is not permission to take an action. Use the user's existing authorization and do not ask again for the same scope.

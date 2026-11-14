@@ -9,6 +9,10 @@ description: Mandatory first-pass security baseline for every software or digita
 
 This baseline is mandatory for every software or digital-product creation, change, review, test, or release task, regardless of the requested feature, UI slice, prototype, or deliverable and whether or not the user explicitly asks for security. Load it after mandatory process skills and before security specialists or implementation. It does not apply to unrelated non-software artifacts. If user-facing UI/UX is in scope, load designmaxxing in this same first pass. When both apply, load both baselines before specialists. Then select only matching specialist skills from the active runtime catalog.
 
+## Autonomous execution
+
+Run authorized repository research, static checks, and reversible local repairs without redundant approval prompts. Continue baseline checks while a separate access or scope gate is pending. Gate only actions that need real authorization, including account access, paid services, live response, external telemetry, production changes, or dynamic testing outside an authorized scope. Keep the task active and continue safe work.
+
 ## Related specialist skills
 
 - Defensive code review: security-review, as required in the pre-build workflow below.
