@@ -7,6 +7,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | Repository | Why it is included |
 | --- | --- |
 | [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. |
+| [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Owner-published standalone public-safe skill for isolated root-cause repair of failed skills while the parent continues its authorized task. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | User-requested cross-platform desktop automation skill, reviewed at the Apache-2.0 v1.2.0 release commit `2b0a7334fc111730454b726e6800aa41cdafc093`; the third-party skill body is not copied into this catalog. |
@@ -78,6 +79,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
+- 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to skills/background-skill-fixer.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.

@@ -456,6 +456,17 @@
       "source_snapshot": "e2c0ceec91e8d882b4ced0b90b34f50ae2903f2b"
     },
     {
+      "id": "background-skill-fixer",
+      "name": "Background Skill Fixer",
+      "category": "agent-efficiency",
+      "description": "Repairs a skill capability that failed after the parent starts an authorized fallback, using one isolated background subagent to find and verify a bounded root-cause fix while the parent continues the main task.",
+      "installed_name": "background-skill-fixer",
+      "source_repository": "https://github.com/engbyume/background-skill-fixer",
+      "source_path": ".",
+      "provenance": "Owner-published standalone public-safe skill; source is at the repository root.",
+      "source_snapshot": "4bc39d37569620a82cc25f6c91d53832bc8c4b06"
+    },
+    {
       "id": "yaml-wiki-framework",
       "name": "YAML Wiki Framework",
       "category": "memory-and-knowledge",
